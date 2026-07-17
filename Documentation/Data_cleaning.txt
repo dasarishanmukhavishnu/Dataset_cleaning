@@ -1,0 +1,174 @@
+
+Day 1 – Data Inspection Workflow
+
+Step 1: Load the Dataset
+
+Objective: Read the dataset and create a working copy.
+
+	Load CSV into a DataFrame.
+	Keep the raw data unchanged by creating a copy.
+
+Step 2: Preview the Dataset
+
+Objective: Understand the structure.
+
+Commands:
+
+	head()
+	tail() (optional)
+	sample() (optional)
+
+Questions:
+
+	What does each column represent?
+	Are there obvious errors?
+
+Step 3: Inspect Dataset Structure
+
+Objective: Understand metadata.
+
+Commands:
+
+	info()
+	shape
+	columns
+
+Check:
+
+	Number of rows
+	Number of columns
+	Data types
+	Memory usage
+
+Your observations:
+
+	1020 rows
+	12 columns
+	Join_Date stored as string
+	Age and Salary are float
+	Remote_Work is boolean
+
+Step 4: Check Missing Values
+
+Objective: Measure data completeness.
+
+Commands:
+
+	isnull().sum()
+	Missing percentage
+
+Your observations:
+
+	Age → 20.69% missing
+	Salary → 2.35% missing
+	Remaining columns → No missing values
+
+Step 5: Check Primary Key Integrity
+
+Objective: Ensure every employee is uniquely identified.
+
+Checks:
+
+	Null values in Employee_ID
+	Duplicate Employee_ID
+
+Your observations:
+
+	No null IDs
+	No duplicate IDs
+	Employee_ID can be treated as the primary key
+	
+Step 6: Check Duplicate Records
+
+Objective: Find repeated data.
+
+Commands:
+
+	duplicated()
+
+Your observations:
+
+	No completely duplicated rows
+
+Step 7: Investigate Name Duplicates
+
+Objective: Determine whether repeated names represent duplicate employees.
+
+Checks:
+
+	Duplicate First_Name + Last_Name
+	Compare emails
+
+Your observations:
+
+	Same names appear multiple times.
+	Emails are also repeated.
+	Other attributes differ.
+	These are not exact duplicate rows.
+
+Step 8: Examine Numerical Columns
+
+Objective: Understand distributions and detect anomalies.
+
+Commands:
+
+	describe()
+
+Your observations:
+
+	Mean Age = 32
+	No major salary outliers
+	Phone numbers contain negative values
+
+Step 9: Examine Categorical Columns
+
+Objective: Identify unique categories.
+
+Commands:
+
+	unique()
+	(Later you can also use value_counts())
+
+Your observations:
+
+Status:
+Active
+Pending
+Inactive
+
+Performance Score:
+Excellent
+Good
+Average
+Poor
+
+When you inspect a dataset, ask yourself these questions every time:
+
+1.Structure
+	How many rows and columns?
+	Data types?
+	Memory usage?
+2.Data Quality
+	Missing values?
+	Duplicate rows?
+	Primary key unique?
+	Invalid values?
+3.Numerical Columns
+	Outliers?
+	Negative values?
+	Impossible values?
+4.Categorical Columns
+	Unique values?
+	Unexpected categories?
+	Frequency distribution?
+5.Date Columns
+	Correct format?
+	Invalid dates?
+	Date range?
+6.Business Rules
+	Is salary positive?
+	Is age realistic?
+	Is email unique?
+	Is phone valid?
+	
+* The Date Handling format='mixed',dayfirst = 'True',format='%d/%m/%Y' or '%m/%d/%Y' format mixed then mention which format do you need strftime('%d/%m/%Y' or '%m/%d/%Y')
