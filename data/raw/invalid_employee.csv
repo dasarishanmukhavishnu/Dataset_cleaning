@@ -1,0 +1,718 @@
+Employee_ID,First_Name,Last_Name,Age,Department_Region,Status,Join_Date,Salary,Email,Phone,Performance_Score,Remote_Work,Department,Region,Errors
+EMP1001,Bob,Brown,,Finance-Texas,active,2020-10-07,65304.66,bob.brown@example.com,1898471390,excellent,TRUE,Finance,Texas,Age is required; Invalid Age
+EMP1002,Alice,Jones,,Admin-Nevada,pending,2023-07-12,88145.9,alice.jones@example.com,5596363211,good,TRUE,Admin,Nevada,Age is required; Invalid Age
+EMP1003,Eva,Davis,25,Admin-Nevada,inactive,11/27/2021,69450.99,eva.davis@example.com,3476490784,good,TRUE,Admin,Nevada,Invalid Join_Date
+EMP1006,Frank,Jones,,Admin-Nevada,active,2020-03-04,96288.43,frank.jones@example.com,4518376063,good,FALSE,Admin,Nevada,Age is required; Invalid Age
+EMP1007,Bob,Jones,30,Cloud Tech-Florida,inactive,7/17/2022,94497.91,bob.jones@example.com,4134327559,average,TRUE,Cloud Tech,Florida,Invalid Join_Date
+EMP1009,Charlie,Johnson,,DevOps-New York,active,2022-04-08,76561.88,charlie.johnson@example.com,8156985699,excellent,TRUE,DevOps,New York,Age is required; Invalid Age
+EMP1011,David,Davis,,DevOps-California,active,2023-04-09,84946.19,david.davis@example.com,1238296576,poor,TRUE,DevOps,California,Age is required; Invalid Age
+EMP1013,Grace,Williams,,Finance-California,active,2020-10-10,85666.84,grace.williams@example.com,2669300892,good,FALSE,Finance,California,Age is required; Invalid Age
+EMP1015,Grace,Jones,40,Sales-Florida,pending,5/29/2021,117975.49,grace.jones@example.com,4215291085,good,TRUE,Sales,Florida,Invalid Join_Date
+EMP1016,Alice,Brown,25,DevOps-Illinois,inactive,4/23/2024,94867.33,alice.brown@example.com,7713334475,poor,FALSE,DevOps,Illinois,Invalid Join_Date
+EMP1017,Grace,Garcia,30,Finance-Texas,pending,11/28/2024,100377.65,grace.garcia@example.com,2639343625,average,TRUE,Finance,Texas,Invalid Join_Date
+EMP1018,Charlie,Garcia,,Cloud Tech-Nevada,inactive,9/19/2024,94726.46,charlie.garcia@example.com,2044397358,excellent,FALSE,Cloud Tech,Nevada,Age is required; Invalid Age; Invalid Join_Date
+EMP1021,Bob,Jones,40,Cloud Tech-Illinois,active,9/19/2020,96182.56,bob.jones@example.com,5990048963,good,FALSE,Cloud Tech,Illinois,Invalid Join_Date
+EMP1024,Bob,Brown,30,Admin-Texas,inactive,2/13/2020,91181.61,bob.brown@example.com,1502745643,good,TRUE,Admin,Texas,Invalid Join_Date
+EMP1025,David,Miller,25,Cloud Tech-Nevada,pending,4/30/2020,66025.92,david.miller@example.com,9485625727,average,FALSE,Cloud Tech,Nevada,Invalid Join_Date
+EMP1029,Alice,Brown,40,DevOps-California,active,5/24/2021,63411.31,alice.brown@example.com,2849939088,excellent,TRUE,DevOps,California,Invalid Join_Date
+EMP1030,Charlie,Jones,40,Admin-California,inactive,5/26/2021,111214.02,charlie.jones@example.com,2613715040,good,TRUE,Admin,California,Invalid Join_Date
+EMP1034,Heidi,Miller,30,Admin-California,active,4/29/2020,90542.62,heidi.miller@example.com,1642361031,excellent,TRUE,Admin,California,Invalid Join_Date
+EMP1035,Frank,Jones,25,Cloud Tech-Illinois,inactive,10/26/2022,114357.1,frank.jones@example.com,6642147648,excellent,TRUE,Cloud Tech,Illinois,Invalid Join_Date
+EMP1036,Alice,Brown,,Cloud Tech-New York,active,2023-03-05,54757.26,alice.brown@example.com,2515837766,poor,FALSE,Cloud Tech,New York,Age is required; Invalid Age
+EMP1039,Eva,Williams,40,HR-Texas,active,7/27/2022,93481.15,eva.williams@example.com,8147617421,poor,FALSE,HR,Texas,Invalid Join_Date
+EMP1040,Bob,Williams,25,Sales-New York,pending,6/27/2021,59271.96,bob.williams@example.com,4386490809,excellent,TRUE,Sales,New York,Invalid Join_Date
+EMP1041,Bob,Davis,30,HR-California,active,6/16/2022,108362.15,bob.davis@example.com,8186617944,excellent,FALSE,HR,California,Invalid Join_Date
+EMP1042,Alice,Johnson,,HR-Nevada,active,2024-03-12,59400.38,alice.johnson@example.com,4918017225,average,TRUE,HR,Nevada,Age is required; Invalid Age
+EMP1043,Bob,Garcia,,Admin-California,inactive,5/23/2023,64744.08,bob.garcia@example.com,164597793,excellent,FALSE,Admin,California,Age is required; Invalid Age; Invalid Join_Date
+EMP1044,Eva,Brown,,Finance-California,active,2020-08-07,94399.91,eva.brown@example.com,5232194167,good,TRUE,Finance,California,Age is required; Invalid Age
+EMP1045,Alice,Brown,25,HR-New York,pending,6/20/2021,61310.74,alice.brown@example.com,61027768,average,TRUE,HR,New York,Invalid Join_Date
+EMP1046,Grace,Garcia,,Cloud Tech-Texas,active,12/13/2024,98371.37,grace.garcia@example.com,7499564121,excellent,FALSE,Cloud Tech,Texas,Age is required; Invalid Age; Invalid Join_Date
+EMP1047,Alice,Davis,35,Sales-Illinois,active,5/30/2022,58921.19,alice.davis@example.com,310303722,average,TRUE,Sales,Illinois,Invalid Join_Date
+EMP1048,Alice,Miller,35,Admin-Nevada,active,9/27/2023,57195.55,alice.miller@example.com,6831472759,excellent,FALSE,Admin,Nevada,Invalid Join_Date
+EMP1049,Grace,Miller,,DevOps-New York,active,2024-05-11,61375.12,grace.miller@example.com,1227770792,excellent,TRUE,DevOps,New York,Age is required; Invalid Age
+EMP1051,David,Miller,35,Admin-Nevada,active,2/22/2022,111051.67,david.miller@example.com,7998407677,good,FALSE,Admin,Nevada,Invalid Join_Date
+EMP1054,Frank,Davis,,Finance-Nevada,pending,2021-09-11,115746.6,frank.davis@example.com,6024375737,excellent,TRUE,Finance,Nevada,Age is required; Invalid Age
+EMP1056,Frank,Garcia,40,Sales-Illinois,active,2/27/2022,112965.33,frank.garcia@example.com,7293417222,good,FALSE,Sales,Illinois,Invalid Join_Date
+EMP1059,Bob,Jones,35,Sales-California,pending,4/16/2022,72832.8,bob.jones@example.com,5619318373,excellent,TRUE,Sales,California,Invalid Join_Date
+EMP1060,Charlie,Williams,30,Finance-Nevada,inactive,10/19/2023,102369.42,charlie.williams@example.com,5508428909,average,TRUE,Finance,Nevada,Invalid Join_Date
+EMP1062,Frank,Jones,40,Finance-Florida,pending,3/13/2021,85782.18,frank.jones@example.com,1213524786,excellent,TRUE,Finance,Florida,Invalid Join_Date
+EMP1063,Charlie,Smith,25,HR-Illinois,pending,7/20/2023,93348.26,charlie.smith@example.com,1255213759,poor,FALSE,HR,Illinois,Invalid Join_Date
+EMP1064,David,Davis,35,Admin-New York,active,2/20/2020,53234.96,david.davis@example.com,3754821455,good,FALSE,Admin,New York,Invalid Join_Date
+EMP1067,Bob,Smith,40,Admin-New York,pending,11/26/2022,82518.49,bob.smith@example.com,5562606028,poor,TRUE,Admin,New York,Invalid Join_Date
+EMP1068,Bob,Brown,40,Admin-Florida,pending,12/23/2022,119152.47,bob.brown@example.com,846684549,poor,TRUE,Admin,Florida,Invalid Join_Date
+EMP1069,Heidi,Miller,,DevOps-Illinois,inactive,8/28/2024,113479.83,heidi.miller@example.com,4892673898,good,FALSE,DevOps,Illinois,Age is required; Invalid Age; Invalid Join_Date
+EMP1070,Charlie,Johnson,40,Finance-California,active,9/16/2024,94636.3,charlie.johnson@example.com,7563410855,poor,FALSE,Finance,California,Invalid Join_Date
+EMP1072,Frank,Smith,,Cloud Tech-New York,active,4/18/2021,76812.47,frank.smith@example.com,5200894345,poor,FALSE,Cloud Tech,New York,Age is required; Invalid Age; Invalid Join_Date
+EMP1073,David,Johnson,25,Finance-Florida,inactive,1/16/2023,82614.7,david.johnson@example.com,8105485100,average,TRUE,Finance,Florida,Invalid Join_Date
+EMP1074,Grace,Jones,40,Sales-Nevada,active,10/20/2024,111645.97,grace.jones@example.com,7490753997,good,TRUE,Sales,Nevada,Invalid Join_Date
+EMP1075,Heidi,Johnson,25,HR-California,inactive,10/13/2024,112414.91,heidi.johnson@example.com,9354492682,good,FALSE,HR,California,Invalid Join_Date
+EMP1076,David,Brown,40,Admin-California,inactive,9/21/2022,52031.74,david.brown@example.com,1589357125,good,TRUE,Admin,California,Invalid Join_Date
+EMP1077,Grace,Brown,30,Finance-New York,pending,12/29/2022,51887.65,grace.brown@example.com,6110627370,good,FALSE,Finance,New York,Invalid Join_Date
+EMP1079,Grace,Brown,35,Admin-Florida,inactive,11/22/2021,103286.08,grace.brown@example.com,6776228276,average,FALSE,Admin,Florida,Invalid Join_Date
+EMP1080,Grace,Davis,35,Cloud Tech-Florida,active,3/14/2024,87759.33,grace.davis@example.com,2881377027,average,FALSE,Cloud Tech,Florida,Invalid Join_Date
+EMP1081,Frank,Brown,30,DevOps-Texas,pending,3/23/2020,102796.32,frank.brown@example.com,5196115939,good,FALSE,DevOps,Texas,Invalid Join_Date
+EMP1082,David,Jones,25,Sales-New York,active,9/15/2020,83149.27,david.jones@example.com,8215454469,poor,TRUE,Sales,New York,Invalid Join_Date
+EMP1084,Bob,Davis,30,HR-Texas,pending,2/22/2020,115022.1,bob.davis@example.com,185106793,good,FALSE,HR,Texas,Invalid Join_Date
+EMP1085,Grace,Williams,40,DevOps-New York,active,4/27/2023,98343.01,grace.williams@example.com,9756792286,poor,FALSE,DevOps,New York,Invalid Join_Date
+EMP1086,Bob,Miller,35,DevOps-Illinois,active,6/18/2024,118869.1,bob.miller@example.com,7725199662,excellent,TRUE,DevOps,Illinois,Invalid Join_Date
+EMP1087,Frank,Smith,,Finance-Nevada,inactive,5/21/2020,85417.26,frank.smith@example.com,6580741208,good,TRUE,Finance,Nevada,Age is required; Invalid Age; Invalid Join_Date
+EMP1088,Grace,Brown,40,Cloud Tech-Florida,inactive,7/25/2023,112410.25,grace.brown@example.com,4818139889,good,TRUE,Cloud Tech,Florida,Invalid Join_Date
+EMP1089,Charlie,Johnson,40,Admin-Nevada,pending,8/25/2023,68905.77,charlie.johnson@example.com,9837801819,average,FALSE,Admin,Nevada,Invalid Join_Date
+EMP1091,Bob,Brown,35,Finance-New York,inactive,3/13/2023,92723.22,bob.brown@example.com,9070562607,excellent,TRUE,Finance,New York,Invalid Join_Date
+EMP1093,Eva,Miller,,DevOps-California,pending,1/21/2020,86163.91,eva.miller@example.com,2412462094,average,TRUE,DevOps,California,Age is required; Invalid Age; Invalid Join_Date
+EMP1094,David,Miller,40,Finance-Illinois,active,11/15/2023,83326.52,david.miller@example.com,2004615264,average,TRUE,Finance,Illinois,Invalid Join_Date
+EMP1096,Frank,Johnson,40,Sales-Illinois,inactive,5/21/2022,119764.2,frank.johnson@example.com,8861405785,average,FALSE,Sales,Illinois,Invalid Join_Date
+EMP1097,Frank,Brown,40,HR-California,inactive,4/17/2021,58445.91,frank.brown@example.com,1706304890,excellent,FALSE,HR,California,Invalid Join_Date
+EMP1098,Bob,Miller,,DevOps-New York,active,3/19/2021,101702.33,bob.miller@example.com,3824967182,excellent,FALSE,DevOps,New York,Age is required; Invalid Age; Invalid Join_Date
+EMP1099,Eva,Jones,25,Admin-California,active,2022-09-01,N/A,eva.jones@example.com,2582386869,good,FALSE,Admin,California,Invalid Salary
+EMP1100,Charlie,Davis,35,Cloud Tech-Texas,pending,8/21/2021,98819.22,charlie.davis@example.com,794200748,good,FALSE,Cloud Tech,Texas,Invalid Join_Date
+EMP1101,Heidi,Johnson,25,Cloud Tech-Illinois,inactive,8/19/2022,83509.99,heidi.johnson@example.com,4653984027,average,FALSE,Cloud Tech,Illinois,Invalid Join_Date
+EMP1102,Alice,Johnson,35,Finance-Texas,active,3/31/2022,84422.26,alice.johnson@example.com,9141612845,average,FALSE,Finance,Texas,Invalid Join_Date
+EMP1103,Alice,Brown,30,Admin-Illinois,inactive,6/23/2020,119574.27,alice.brown@example.com,3985547434,average,TRUE,Admin,Illinois,Invalid Join_Date
+EMP1104,Grace,Johnson,,Sales-Illinois,active,2024-07-05,86580.08,grace.johnson@example.com,5379502096,good,TRUE,Sales,Illinois,Age is required; Invalid Age
+EMP1106,Bob,Miller,30,DevOps-New York,inactive,9/14/2023,55683.12,bob.miller@example.com,8071569561,poor,TRUE,DevOps,New York,Invalid Join_Date
+EMP1108,David,Miller,35,DevOps-California,pending,10/26/2024,81782.19,david.miller@example.com,5319433749,good,FALSE,DevOps,California,Invalid Join_Date
+EMP1109,Eva,Davis,,DevOps-New York,inactive,8/23/2020,88119.37,eva.davis@example.com,4793036148,good,TRUE,DevOps,New York,Age is required; Invalid Age; Invalid Join_Date
+EMP1111,Eva,Davis,40,Cloud Tech-Florida,pending,9/14/2021,98981.36,eva.davis@example.com,9212493842,good,TRUE,Cloud Tech,Florida,Invalid Join_Date
+EMP1112,Heidi,Garcia,40,Cloud Tech-Illinois,active,12/26/2024,80242.01,heidi.garcia@example.com,894870604,good,TRUE,Cloud Tech,Illinois,Invalid Join_Date
+EMP1114,Alice,Davis,35,Sales-Texas,active,8/21/2022,86327.47,alice.davis@example.com,3046875062,average,FALSE,Sales,Texas,Invalid Join_Date
+EMP1115,Eva,Brown,30,Sales-Florida,pending,7/25/2024,84420.81,eva.brown@example.com,5190361331,average,FALSE,Sales,Florida,Invalid Join_Date
+EMP1117,Heidi,Miller,35,DevOps-Florida,pending,3/16/2020,81837.81,heidi.miller@example.com,4317350582,good,TRUE,DevOps,Florida,Invalid Join_Date
+EMP1119,Alice,Jones,30,Sales-California,pending,3/29/2024,84894.52,alice.jones@example.com,651207048,excellent,TRUE,Sales,California,Invalid Join_Date
+EMP1121,Bob,Jones,25,DevOps-Illinois,active,12/24/2023,61086.47,bob.jones@example.com,9639907675,excellent,TRUE,DevOps,Illinois,Invalid Join_Date
+EMP1122,Grace,Johnson,25,Admin-Texas,inactive,8/28/2020,95339.68,grace.johnson@example.com,9915078592,poor,TRUE,Admin,Texas,Invalid Join_Date
+EMP1123,Eva,Davis,,DevOps-California,inactive,2024-05-09,83774.97,eva.davis@example.com,1109193927,average,FALSE,DevOps,California,Age is required; Invalid Age
+EMP1124,Heidi,Jones,,Admin-Florida,active,2023-12-05,85576.86,heidi.jones@example.com,4567972319,poor,FALSE,Admin,Florida,Age is required; Invalid Age
+EMP1126,Eva,Johnson,,Sales-Nevada,inactive,2024-07-11,60401.68,eva.johnson@example.com,2274954507,average,FALSE,Sales,Nevada,Age is required; Invalid Age
+EMP1127,Frank,Smith,35,Sales-Illinois,inactive,7/21/2022,115299.66,frank.smith@example.com,9203880652,good,TRUE,Sales,Illinois,Invalid Join_Date
+EMP1128,David,Brown,,Finance-New York,inactive,3/30/2020,72272.34,david.brown@example.com,3315377958,average,FALSE,Finance,New York,Age is required; Invalid Age; Invalid Join_Date
+EMP1130,Frank,Brown,25,Finance-Texas,pending,7/24/2022,51074.33,frank.brown@example.com,7303379336,excellent,TRUE,Finance,Texas,Invalid Join_Date
+EMP1131,Charlie,Jones,25,Finance-California,inactive,6/30/2023,98489.32,charlie.jones@example.com,5636205014,excellent,FALSE,Finance,California,Invalid Join_Date
+EMP1132,Frank,Smith,,Finance-California,pending,2024-11-01,112120.71,frank.smith@example.com,812473949,poor,TRUE,Finance,California,Age is required; Invalid Age
+EMP1133,Alice,Jones,,Cloud Tech-New York,pending,2023-02-11,114465.04,alice.jones@example.com,334234257,good,FALSE,Cloud Tech,New York,Age is required; Invalid Age
+EMP1134,Bob,Davis,40,Cloud Tech-Nevada,pending,11/22/2024,57035.51,bob.davis@example.com,3230241025,poor,TRUE,Cloud Tech,Nevada,Invalid Join_Date
+EMP1135,Eva,Jones,25,Cloud Tech-California,active,8/23/2021,75092.43,eva.jones@example.com,1534735527,excellent,TRUE,Cloud Tech,California,Invalid Join_Date
+EMP1136,David,Smith,,Finance-Illinois,pending,2024-11-06,62603.98,david.smith@example.com,9611223385,good,FALSE,Finance,Illinois,Age is required; Invalid Age
+EMP1137,Grace,Smith,,DevOps-New York,inactive,2023-09-04,60018.24,grace.smith@example.com,5596309937,excellent,FALSE,DevOps,New York,Age is required; Invalid Age
+EMP1140,Eva,Garcia,40,HR-New York,inactive,10/13/2024,83824.56,eva.garcia@example.com,7872558776,poor,FALSE,HR,New York,Invalid Join_Date
+EMP1141,Frank,Smith,,HR-Nevada,inactive,2/14/2020,118456.11,frank.smith@example.com,4969033372,excellent,TRUE,HR,Nevada,Age is required; Invalid Age; Invalid Join_Date
+EMP1143,Eva,Garcia,30,Sales-California,active,7/27/2023,63309.24,eva.garcia@example.com,1214785389,good,FALSE,Sales,California,Invalid Join_Date
+EMP1144,Charlie,Garcia,25,DevOps-Nevada,active,9/24/2021,105202.73,charlie.garcia@example.com,7895677664,excellent,TRUE,DevOps,Nevada,Invalid Join_Date
+EMP1146,Frank,Williams,,Sales-California,active,2021-10-06,113983.43,frank.williams@example.com,5148881430,excellent,TRUE,Sales,California,Age is required; Invalid Age
+EMP1147,Eva,Williams,35,Cloud Tech-Florida,active,10/15/2020,102790.6,eva.williams@example.com,1150835353,good,FALSE,Cloud Tech,Florida,Invalid Join_Date
+EMP1148,Grace,Smith,,HR-Texas,inactive,1/29/2020,68512.1,grace.smith@example.com,4439284043,average,FALSE,HR,Texas,Age is required; Invalid Age; Invalid Join_Date
+EMP1149,Frank,Garcia,35,Sales-Florida,pending,1/30/2022,57584.23,frank.garcia@example.com,5669078262,average,TRUE,Sales,Florida,Invalid Join_Date
+EMP1150,Alice,Williams,,Sales-California,pending,3/29/2021,95335.67,alice.williams@example.com,3373898774,poor,FALSE,Sales,California,Age is required; Invalid Age; Invalid Join_Date
+EMP1151,Heidi,Williams,35,DevOps-Florida,active,10/13/2020,53174.28,heidi.williams@example.com,1536637779,average,TRUE,DevOps,Florida,Invalid Join_Date
+EMP1153,Grace,Williams,,DevOps-Nevada,active,12/18/2024,79041.92,grace.williams@example.com,6668459089,average,TRUE,DevOps,Nevada,Age is required; Invalid Age; Invalid Join_Date
+EMP1154,Heidi,Jones,,Finance-California,active,11/14/2023,75937.1,heidi.jones@example.com,2259999662,excellent,TRUE,Finance,California,Age is required; Invalid Age; Invalid Join_Date
+EMP1155,David,Johnson,35,Cloud Tech-Nevada,inactive,1/20/2023,113118.73,david.johnson@example.com,6186371596,average,FALSE,Cloud Tech,Nevada,Invalid Join_Date
+EMP1157,David,Johnson,,Cloud Tech-Texas,inactive,5/13/2021,119217.46,david.johnson@example.com,2316433480,poor,FALSE,Cloud Tech,Texas,Age is required; Invalid Age; Invalid Join_Date
+EMP1158,David,Smith,25,Sales-New York,pending,3/18/2021,106913.71,david.smith@example.com,7058025661,average,FALSE,Sales,New York,Invalid Join_Date
+EMP1159,Charlie,Brown,,Cloud Tech-California,active,9/23/2020,87815.08,charlie.brown@example.com,1286716322,average,TRUE,Cloud Tech,California,Age is required; Invalid Age; Invalid Join_Date
+EMP1161,Alice,Smith,30,HR-Texas,active,2/28/2024,79467.24,alice.smith@example.com,7430271692,poor,FALSE,HR,Texas,Invalid Join_Date
+EMP1162,Bob,Garcia,40,Finance-California,pending,4/30/2023,57633.78,bob.garcia@example.com,8597779013,poor,TRUE,Finance,California,Invalid Join_Date
+EMP1163,Alice,Brown,,HR-Florida,pending,2020-04-03,54257.78,alice.brown@example.com,7546926328,poor,TRUE,HR,Florida,Age is required; Invalid Age
+EMP1164,Grace,Johnson,40,DevOps-Texas,inactive,12/29/2023,113679.06,grace.johnson@example.com,6762916031,poor,TRUE,DevOps,Texas,Invalid Join_Date
+EMP1165,Bob,Smith,35,Sales-New York,active,9/15/2020,69251.12,bob.smith@example.com,4841376814,poor,TRUE,Sales,New York,Invalid Join_Date
+EMP1166,Frank,Garcia,40,Sales-Illinois,inactive,7/18/2022,85388.58,frank.garcia@example.com,1185672437,poor,TRUE,Sales,Illinois,Invalid Join_Date
+EMP1167,Bob,Davis,,DevOps-New York,inactive,7/13/2022,112166.37,bob.davis@example.com,701765635,excellent,FALSE,DevOps,New York,Age is required; Invalid Age; Invalid Join_Date
+EMP1170,Bob,Garcia,35,Admin-Illinois,active,4/16/2023,116963.72,bob.garcia@example.com,9124186209,average,TRUE,Admin,Illinois,Invalid Join_Date
+EMP1172,Eva,Williams,,HR-California,active,3/29/2023,85518.88,eva.williams@example.com,816470899,excellent,FALSE,HR,California,Age is required; Invalid Age; Invalid Join_Date
+EMP1173,Heidi,Brown,30,Cloud Tech-California,pending,1/22/2022,58041.97,heidi.brown@example.com,6335331059,poor,TRUE,Cloud Tech,California,Invalid Join_Date
+EMP1174,David,Garcia,40,Sales-Illinois,pending,10/14/2023,94988.94,david.garcia@example.com,531312205,good,FALSE,Sales,Illinois,Invalid Join_Date
+EMP1176,Alice,Williams,30,Admin-Illinois,pending,3/31/2022,54870.98,alice.williams@example.com,6133155205,good,FALSE,Admin,Illinois,Invalid Join_Date
+EMP1179,Charlie,Williams,,Cloud Tech-Nevada,active,2021-11-07,81017.91,charlie.williams@example.com,2419562524,excellent,TRUE,Cloud Tech,Nevada,Age is required; Invalid Age
+EMP1180,Heidi,Jones,40,HR-New York,pending,8/21/2020,74162.1,heidi.jones@example.com,7150997682,excellent,FALSE,HR,New York,Invalid Join_Date
+EMP1181,Heidi,Davis,,DevOps-California,active,3/27/2021,77668.44,heidi.davis@example.com,8903091435,good,TRUE,DevOps,California,Age is required; Invalid Age; Invalid Join_Date
+EMP1182,Alice,Miller,30,HR-New York,active,4/14/2024,67886.37,alice.miller@example.com,3910257431,poor,FALSE,HR,New York,Invalid Join_Date
+EMP1183,Alice,Williams,40,DevOps-Florida,active,9/21/2020,76614.52,alice.williams@example.com,6303975244,good,TRUE,DevOps,Florida,Invalid Join_Date
+EMP1185,Frank,Jones,,Finance-Illinois,inactive,12/24/2023,94809.92,frank.jones@example.com,8033968526,good,TRUE,Finance,Illinois,Age is required; Invalid Age; Invalid Join_Date
+EMP1186,Grace,Johnson,25,HR-New York,pending,7/31/2022,108241.81,grace.johnson@example.com,171302320,excellent,TRUE,HR,New York,Invalid Join_Date
+EMP1187,Bob,Davis,40,Cloud Tech-New York,inactive,4/21/2023,78031.49,bob.davis@example.com,2983381673,good,TRUE,Cloud Tech,New York,Invalid Join_Date
+EMP1189,David,Miller,35,HR-Nevada,pending,7/27/2024,60338.29,david.miller@example.com,7347156626,excellent,FALSE,HR,Nevada,Invalid Join_Date
+EMP1191,Heidi,Williams,40,Sales-Illinois,inactive,10/26/2023,114690.8,heidi.williams@example.com,1498282466,poor,TRUE,Sales,Illinois,Invalid Join_Date
+EMP1192,Frank,Smith,35,Admin-Florida,active,8/18/2022,80954.56,frank.smith@example.com,4746897151,good,FALSE,Admin,Florida,Invalid Join_Date
+EMP1193,Eva,Davis,,Cloud Tech-California,pending,5/31/2020,71728.55,eva.davis@example.com,7323008575,good,TRUE,Cloud Tech,California,Age is required; Invalid Age; Invalid Join_Date
+EMP1195,Grace,Johnson,40,Sales-Illinois,pending,3/25/2020,81481.36,grace.johnson@example.com,1692364586,excellent,FALSE,Sales,Illinois,Invalid Join_Date
+EMP1197,Frank,Brown,25,Sales-Nevada,active,3/21/2020,67342.06,frank.brown@example.com,2497243991,good,TRUE,Sales,Nevada,Invalid Join_Date
+EMP1198,Heidi,Jones,,Sales-Illinois,active,1/15/2022,76099.64,heidi.jones@example.com,116691835,excellent,FALSE,Sales,Illinois,Age is required; Invalid Age; Invalid Join_Date
+EMP1201,Charlie,Garcia,35,Cloud Tech-Illinois,pending,10/16/2020,114172.25,charlie.garcia@example.com,2701168645,good,TRUE,Cloud Tech,Illinois,Invalid Join_Date
+EMP1202,Grace,Davis,30,Sales-Nevada,active,9/26/2021,89124.54,grace.davis@example.com,2252237280,excellent,TRUE,Sales,Nevada,Invalid Join_Date
+EMP1204,Grace,Brown,,HR-Texas,inactive,9/24/2021,62618.4,grace.brown@example.com,7912141613,excellent,FALSE,HR,Texas,Age is required; Invalid Age; Invalid Join_Date
+EMP1207,Charlie,Brown,40,Cloud Tech-Florida,inactive,10/17/2023,100371.0,charlie.brown@example.com,8477596554,poor,TRUE,Cloud Tech,Florida,Invalid Join_Date
+EMP1208,Eva,Miller,40,Admin-Illinois,active,9/25/2021,117591.76,eva.miller@example.com,5356690550,good,FALSE,Admin,Illinois,Invalid Join_Date
+EMP1210,Grace,Davis,30,Admin-Illinois,active,11/22/2024,67500.22,grace.davis@example.com,5797863049,average,TRUE,Admin,Illinois,Invalid Join_Date
+EMP1211,Frank,Davis,,Cloud Tech-Nevada,pending,2024-09-10,58727.44,frank.davis@example.com,5057397690,poor,TRUE,Cloud Tech,Nevada,Age is required; Invalid Age
+EMP1212,Charlie,Jones,35,Finance-Illinois,active,8/28/2024,80623.08,charlie.jones@example.com,5671649327,excellent,TRUE,Finance,Illinois,Invalid Join_Date
+EMP1213,David,Davis,40,HR-Texas,inactive,4/19/2020,77751.78,david.davis@example.com,9802714871,excellent,FALSE,HR,Texas,Invalid Join_Date
+EMP1214,Grace,Williams,25,HR-New York,active,10/14/2021,115157.81,grace.williams@example.com,7178333210,good,FALSE,HR,New York,Invalid Join_Date
+EMP1215,Frank,Jones,30,Admin-Texas,inactive,8/26/2024,83071.85,frank.jones@example.com,6025643470,poor,FALSE,Admin,Texas,Invalid Join_Date
+EMP1219,David,Davis,30,HR-Florida,active,6/13/2023,74697.12,david.davis@example.com,6904098365,average,TRUE,HR,Florida,Invalid Join_Date
+EMP1220,Charlie,Williams,25,Sales-California,active,12/13/2022,88085.74,charlie.williams@example.com,5528993159,excellent,TRUE,Sales,California,Invalid Join_Date
+EMP1223,Frank,Brown,30,Cloud Tech-California,pending,11/24/2021,106945.62,frank.brown@example.com,7374605232,average,FALSE,Cloud Tech,California,Invalid Join_Date
+EMP1225,Alice,Johnson,35,Admin-Texas,active,12/19/2024,52933.42,alice.johnson@example.com,6756618442,poor,TRUE,Admin,Texas,Invalid Join_Date
+EMP1226,Grace,Jones,,Finance-California,active,3/22/2024,95283.03,grace.jones@example.com,8612590471,good,FALSE,Finance,California,Age is required; Invalid Age; Invalid Join_Date
+EMP1227,Alice,Miller,35,HR-Texas,inactive,6/13/2022,112264.06,alice.miller@example.com,9277423329,good,FALSE,HR,Texas,Invalid Join_Date
+EMP1228,Grace,Smith,35,Admin-Florida,pending,10/15/2022,75714.28,grace.smith@example.com,5912662014,good,TRUE,Admin,Florida,Invalid Join_Date
+EMP1229,Eva,Jones,25,DevOps-Florida,active,5/31/2022,92171.73,eva.jones@example.com,7201859625,poor,FALSE,DevOps,Florida,Invalid Join_Date
+EMP1230,Eva,Miller,35,Cloud Tech-Texas,inactive,9/15/2023,70694.8,eva.miller@example.com,3013674925,average,TRUE,Cloud Tech,Texas,Invalid Join_Date
+EMP1232,Frank,Brown,,Finance-California,pending,2024-08-06,116353.31,frank.brown@example.com,1783099973,poor,TRUE,Finance,California,Age is required; Invalid Age
+EMP1233,Grace,Brown,35,Sales-Nevada,pending,11/23/2020,116695.26,grace.brown@example.com,1926764920,good,FALSE,Sales,Nevada,Invalid Join_Date
+EMP1234,Heidi,Brown,25,Admin-Texas,active,5/13/2024,95161.4,heidi.brown@example.com,5182606887,excellent,FALSE,Admin,Texas,Invalid Join_Date
+EMP1235,Alice,Brown,,Admin-Nevada,inactive,1/29/2022,76040.94,alice.brown@example.com,7189813128,good,TRUE,Admin,Nevada,Age is required; Invalid Age; Invalid Join_Date
+EMP1236,Charlie,Miller,,HR-Florida,inactive,8/23/2023,69508.28,charlie.miller@example.com,2087510292,good,FALSE,HR,Florida,Age is required; Invalid Age; Invalid Join_Date
+EMP1237,Alice,Miller,30,Finance-Illinois,inactive,2/24/2023,58243.27,alice.miller@example.com,2184011844,average,FALSE,Finance,Illinois,Invalid Join_Date
+EMP1239,Bob,Garcia,40,Admin-Nevada,inactive,6/28/2020,106735.93,bob.garcia@example.com,7297585987,average,TRUE,Admin,Nevada,Invalid Join_Date
+EMP1240,Frank,Johnson,35,DevOps-Texas,pending,1/15/2023,70325.36,frank.johnson@example.com,3103032431,average,FALSE,DevOps,Texas,Invalid Join_Date
+EMP1242,David,Brown,40,Cloud Tech-California,pending,3/18/2023,75823.78,david.brown@example.com,8446267145,average,FALSE,Cloud Tech,California,Invalid Join_Date
+EMP1243,Charlie,Smith,,Cloud Tech-Texas,inactive,3/26/2022,119971.65,charlie.smith@example.com,2831435988,average,FALSE,Cloud Tech,Texas,Age is required; Invalid Age; Invalid Join_Date
+EMP1247,David,Smith,35,Sales-California,active,5/28/2021,63741.13,david.smith@example.com,1128497184,poor,TRUE,Sales,California,Invalid Join_Date
+EMP1248,Eva,Smith,30,DevOps-California,pending,12/28/2022,56539.99,eva.smith@example.com,9484910255,excellent,TRUE,DevOps,California,Invalid Join_Date
+EMP1249,Charlie,Williams,30,DevOps-Illinois,pending,5/24/2023,73633.37,charlie.williams@example.com,2588967923,good,TRUE,DevOps,Illinois,Invalid Join_Date
+EMP1250,Alice,Miller,25,Cloud Tech-Texas,pending,4/28/2024,90373.99,alice.miller@example.com,822269404,good,FALSE,Cloud Tech,Texas,Invalid Join_Date
+EMP1251,Grace,Smith,,DevOps-Texas,inactive,12/25/2024,93901.48,grace.smith@example.com,3967275783,good,FALSE,DevOps,Texas,Age is required; Invalid Age; Invalid Join_Date
+EMP1253,Charlie,Jones,40,Finance-Florida,inactive,2/21/2021,73813.48,charlie.jones@example.com,1131290147,average,FALSE,Finance,Florida,Invalid Join_Date
+EMP1254,Frank,Smith,35,Finance-New York,inactive,11/20/2022,89315.59,frank.smith@example.com,7068277880,average,FALSE,Finance,New York,Invalid Join_Date
+EMP1255,Heidi,Williams,25,HR-Florida,active,10/15/2020,56776.82,heidi.williams@example.com,6093068537,poor,FALSE,HR,Florida,Invalid Join_Date
+EMP1256,Grace,Davis,,Finance-New York,active,7/24/2024,72920.51,grace.davis@example.com,9097283214,excellent,TRUE,Finance,New York,Age is required; Invalid Age; Invalid Join_Date
+EMP1257,Frank,Miller,30,Admin-Florida,pending,8/14/2022,84913.18,frank.miller@example.com,2850676250,average,TRUE,Admin,Florida,Invalid Join_Date
+EMP1260,Bob,Smith,40,Admin-California,pending,1/19/2022,103469.97,bob.smith@example.com,509754509,good,TRUE,Admin,California,Invalid Join_Date
+EMP1262,Heidi,Jones,,HR-Illinois,pending,2023-05-06,58316.77,heidi.jones@example.com,8826170242,excellent,TRUE,HR,Illinois,Age is required; Invalid Age
+EMP1263,Grace,Smith,35,HR-Illinois,inactive,3/26/2024,60098.72,grace.smith@example.com,7654562840,excellent,TRUE,HR,Illinois,Invalid Join_Date
+EMP1264,Grace,Williams,,Cloud Tech-Texas,active,2020-07-10,99951.43,grace.williams@example.com,7722560530,average,TRUE,Cloud Tech,Texas,Age is required; Invalid Age
+EMP1266,Grace,Brown,,DevOps-California,pending,11/19/2021,85512.05,grace.brown@example.com,7416787255,good,FALSE,DevOps,California,Age is required; Invalid Age; Invalid Join_Date
+EMP1267,Heidi,Garcia,,HR-Florida,active,1/24/2022,73186.77,heidi.garcia@example.com,8621102257,good,FALSE,HR,Florida,Age is required; Invalid Age; Invalid Join_Date
+EMP1268,Grace,Davis,,HR-Nevada,pending,2023-12-07,51865.3,grace.davis@example.com,305690673,poor,TRUE,HR,Nevada,Age is required; Invalid Age
+EMP1270,Grace,Miller,30,DevOps-New York,active,3/18/2023,116374.36,grace.miller@example.com,4143637188,excellent,FALSE,DevOps,New York,Invalid Join_Date
+EMP1271,Alice,Garcia,40,HR-Florida,active,4/25/2022,98335.02,alice.garcia@example.com,2392312603,excellent,FALSE,HR,Florida,Invalid Join_Date
+EMP1272,Heidi,Garcia,25,DevOps-New York,pending,2/28/2021,89262.07,heidi.garcia@example.com,3260931065,poor,TRUE,DevOps,New York,Invalid Join_Date
+EMP1273,Heidi,Garcia,,Finance-California,active,7/30/2022,113848.69,heidi.garcia@example.com,8433567085,excellent,TRUE,Finance,California,Age is required; Invalid Age; Invalid Join_Date
+EMP1274,Frank,Smith,35,Sales-Florida,active,5/19/2021,69530.45,frank.smith@example.com,414545634,poor,TRUE,Sales,Florida,Invalid Join_Date
+EMP1275,Eva,Brown,35,DevOps-New York,pending,12/14/2023,84230.22,eva.brown@example.com,200053473,good,TRUE,DevOps,New York,Invalid Join_Date
+EMP1276,Eva,Smith,35,Cloud Tech-Illinois,pending,1/17/2023,76578.59,eva.smith@example.com,9162475540,average,FALSE,Cloud Tech,Illinois,Invalid Join_Date
+EMP1281,Charlie,Brown,25,Sales-New York,inactive,8/30/2023,115452.25,charlie.brown@example.com,8485571616,poor,FALSE,Sales,New York,Invalid Join_Date
+EMP1282,Heidi,Miller,30,HR-California,inactive,8/15/2023,54141.38,heidi.miller@example.com,6880294239,average,FALSE,HR,California,Invalid Join_Date
+EMP1283,David,Davis,,DevOps-Nevada,active,12/24/2020,79251.95,david.davis@example.com,9036788126,good,FALSE,DevOps,Nevada,Age is required; Invalid Age; Invalid Join_Date
+EMP1284,Alice,Johnson,40,Finance-New York,pending,11/21/2024,114822.78,alice.johnson@example.com,8686694319,good,TRUE,Finance,New York,Invalid Join_Date
+EMP1285,Alice,Williams,35,Sales-Illinois,active,11/17/2021,69919.32,alice.williams@example.com,2939087883,average,TRUE,Sales,Illinois,Invalid Join_Date
+EMP1286,Heidi,Smith,30,Sales-Florida,inactive,1/29/2021,106616.97,heidi.smith@example.com,4344812307,poor,FALSE,Sales,Florida,Invalid Join_Date
+EMP1287,Heidi,Jones,35,DevOps-New York,active,2/17/2024,73597.85,heidi.jones@example.com,3402424032,poor,TRUE,DevOps,New York,Invalid Join_Date
+EMP1288,David,Smith,30,Sales-Nevada,inactive,8/20/2024,79939.23,david.smith@example.com,8105955183,excellent,TRUE,Sales,Nevada,Invalid Join_Date
+EMP1289,Grace,Garcia,25,Admin-New York,inactive,10/24/2021,N/A,grace.garcia@example.com,2694500533,poor,FALSE,Admin,New York,Invalid Salary; Invalid Join_Date
+EMP1291,Eva,Williams,35,DevOps-New York,active,9/29/2023,58275.74,eva.williams@example.com,3735439626,good,FALSE,DevOps,New York,Invalid Join_Date
+EMP1292,Grace,Smith,,DevOps-California,pending,8/28/2020,94709.79,grace.smith@example.com,3652717271,excellent,FALSE,DevOps,California,Age is required; Invalid Age; Invalid Join_Date
+EMP1293,Frank,Johnson,,Admin-New York,active,2022-06-09,60722.99,frank.johnson@example.com,2397240421,excellent,TRUE,Admin,New York,Age is required; Invalid Age
+EMP1294,Frank,Johnson,40,DevOps-Illinois,inactive,3/31/2024,87626.24,frank.johnson@example.com,6931216375,good,TRUE,DevOps,Illinois,Invalid Join_Date
+EMP1296,Bob,Miller,,Cloud Tech-Texas,pending,2022-01-11,64150.97,bob.miller@example.com,23142899,good,TRUE,Cloud Tech,Texas,Age is required; Invalid Age
+EMP1297,Charlie,Davis,35,Sales-Florida,active,10/25/2023,64378.1,charlie.davis@example.com,1851327971,poor,FALSE,Sales,Florida,Invalid Join_Date
+EMP1298,Bob,Jones,,Finance-Texas,inactive,9/27/2020,85927.35,bob.jones@example.com,4572308480,good,FALSE,Finance,Texas,Age is required; Invalid Age; Invalid Join_Date
+EMP1299,Alice,Garcia,,Finance-Nevada,inactive,1/21/2024,51523.93,alice.garcia@example.com,18418619,average,TRUE,Finance,Nevada,Age is required; Invalid Age; Invalid Join_Date
+EMP1300,Alice,Smith,30,Sales-Texas,active,5/17/2022,74117.02,alice.smith@example.com,3036625435,poor,FALSE,Sales,Texas,Invalid Join_Date
+EMP1301,Alice,Smith,25,Finance-Texas,inactive,4/17/2022,62598.69,alice.smith@example.com,1721314518,average,TRUE,Finance,Texas,Invalid Join_Date
+EMP1303,Charlie,Miller,35,Cloud Tech-New York,pending,3/15/2022,87018.98,charlie.miller@example.com,5926249450,good,TRUE,Cloud Tech,New York,Invalid Join_Date
+EMP1305,Grace,Jones,30,Admin-Florida,inactive,11/13/2020,69295.48,grace.jones@example.com,6771196420,excellent,FALSE,Admin,Florida,Invalid Join_Date
+EMP1306,Bob,Brown,25,DevOps-Florida,pending,4/17/2024,115536.66,bob.brown@example.com,5226557675,excellent,TRUE,DevOps,Florida,Invalid Join_Date
+EMP1308,Alice,Garcia,30,DevOps-Texas,inactive,6/17/2022,66403.75,alice.garcia@example.com,7883619688,good,FALSE,DevOps,Texas,Invalid Join_Date
+EMP1309,Alice,Miller,30,Sales-California,active,7/28/2024,114147.79,alice.miller@example.com,3135030586,excellent,FALSE,Sales,California,Invalid Join_Date
+EMP1311,Alice,Davis,,Sales-Nevada,active,2023-06-07,97512.51,alice.davis@example.com,6333021259,good,TRUE,Sales,Nevada,Age is required; Invalid Age
+EMP1312,Alice,Brown,35,DevOps-Nevada,inactive,5/28/2024,86712.41,alice.brown@example.com,6501917919,average,TRUE,DevOps,Nevada,Invalid Join_Date
+EMP1313,Grace,Davis,30,HR-Florida,active,3/25/2024,87654.98,grace.davis@example.com,2521310961,poor,FALSE,HR,Florida,Invalid Join_Date
+EMP1314,David,Williams,35,DevOps-New York,inactive,4/28/2020,89367.02,david.williams@example.com,2728476569,poor,FALSE,DevOps,New York,Invalid Join_Date
+EMP1316,Frank,Williams,25,Sales-Nevada,active,4/15/2020,68792.31,frank.williams@example.com,6678498435,average,FALSE,Sales,Nevada,Invalid Join_Date
+EMP1318,Frank,Davis,35,Cloud Tech-New York,active,2/27/2024,58212.13,frank.davis@example.com,3628917755,good,FALSE,Cloud Tech,New York,Invalid Join_Date
+EMP1319,Heidi,Miller,30,DevOps-Illinois,pending,2/22/2021,77764.24,heidi.miller@example.com,6205634110,good,TRUE,DevOps,Illinois,Invalid Join_Date
+EMP1320,Frank,Garcia,35,Finance-Florida,pending,8/21/2023,75148.17,frank.garcia@example.com,5950342810,average,FALSE,Finance,Florida,Invalid Join_Date
+EMP1323,Eva,Johnson,,Sales-Illinois,pending,2022-05-05,70663.46,eva.johnson@example.com,4054683564,excellent,FALSE,Sales,Illinois,Age is required; Invalid Age
+EMP1326,Frank,Williams,30,Admin-Nevada,pending,9/27/2022,62883.34,frank.williams@example.com,3322889856,average,FALSE,Admin,Nevada,Invalid Join_Date
+EMP1327,Alice,Davis,,Cloud Tech-Texas,pending,2020-09-04,103503.72,alice.davis@example.com,2545960632,average,TRUE,Cloud Tech,Texas,Age is required; Invalid Age
+EMP1328,David,Garcia,25,DevOps-New York,active,3/23/2021,85401.3,david.garcia@example.com,9912971023,poor,TRUE,DevOps,New York,Invalid Join_Date
+EMP1329,Heidi,Garcia,40,Cloud Tech-Texas,pending,2023-03-02,N/A,heidi.garcia@example.com,8171752420,excellent,FALSE,Cloud Tech,Texas,Invalid Salary
+EMP1330,Eva,Smith,,HR-Texas,pending,7/23/2024,98850.14,eva.smith@example.com,4955112746,poor,FALSE,HR,Texas,Age is required; Invalid Age; Invalid Join_Date
+EMP1333,David,Williams,35,DevOps-Texas,pending,10/23/2024,95492.61,david.williams@example.com,6874090379,good,FALSE,DevOps,Texas,Invalid Join_Date
+EMP1334,Grace,Miller,40,Finance-Illinois,inactive,4/24/2020,94572.37,grace.miller@example.com,2146296135,good,FALSE,Finance,Illinois,Invalid Join_Date
+EMP1336,Alice,Jones,30,Admin-Nevada,pending,8/31/2022,68976.65,alice.jones@example.com,1663651558,poor,TRUE,Admin,Nevada,Invalid Join_Date
+EMP1337,Eva,Williams,,Sales-Nevada,active,2021-02-01,115013.65,eva.williams@example.com,7371470826,average,FALSE,Sales,Nevada,Age is required; Invalid Age
+EMP1338,David,Brown,,Admin-Nevada,inactive,2020-06-06,70949.38,david.brown@example.com,2359096055,poor,TRUE,Admin,Nevada,Age is required; Invalid Age
+EMP1339,Grace,Brown,,HR-Florida,pending,10/13/2020,105334.87,grace.brown@example.com,7303064420,average,FALSE,HR,Florida,Age is required; Invalid Age; Invalid Join_Date
+EMP1340,Bob,Williams,,DevOps-California,active,7/19/2020,80596.18,bob.williams@example.com,2146147682,good,FALSE,DevOps,California,Age is required; Invalid Age; Invalid Join_Date
+EMP1341,Frank,Brown,,Sales-Illinois,inactive,2024-03-05,72846.37,frank.brown@example.com,4201654234,good,TRUE,Sales,Illinois,Age is required; Invalid Age
+EMP1343,Grace,Johnson,25,Sales-California,active,12/31/2023,55145.47,grace.johnson@example.com,8931992549,good,FALSE,Sales,California,Invalid Join_Date
+EMP1344,Grace,Williams,30,DevOps-Florida,inactive,2022-08-01,N/A,grace.williams@example.com,2727516479,poor,TRUE,DevOps,Florida,Invalid Salary
+EMP1345,Eva,Davis,40,HR-California,active,9/28/2020,56110.81,eva.davis@example.com,7279103367,good,FALSE,HR,California,Invalid Join_Date
+EMP1348,David,Garcia,,Sales-New York,pending,2/18/2022,61865.12,david.garcia@example.com,5586851275,excellent,TRUE,Sales,New York,Age is required; Invalid Age; Invalid Join_Date
+EMP1351,Heidi,Smith,25,Admin-California,active,3/21/2022,73255.21,heidi.smith@example.com,7981789045,average,FALSE,Admin,California,Invalid Join_Date
+EMP1353,David,Garcia,40,HR-New York,inactive,10/15/2021,70401.37,david.garcia@example.com,7660538443,good,TRUE,HR,New York,Invalid Join_Date
+EMP1354,Heidi,Garcia,,Admin-California,inactive,7/28/2021,107154.62,heidi.garcia@example.com,4630600024,average,TRUE,Admin,California,Age is required; Invalid Age; Invalid Join_Date
+EMP1355,Bob,Davis,,Admin-Illinois,pending,2021-03-01,97719.88,bob.davis@example.com,8955296385,excellent,FALSE,Admin,Illinois,Age is required; Invalid Age
+EMP1356,Heidi,Johnson,30,Finance-California,pending,5/21/2020,107327.59,heidi.johnson@example.com,3960962625,poor,FALSE,Finance,California,Invalid Join_Date
+EMP1359,Grace,Williams,,Cloud Tech-California,pending,7/21/2024,87583.42,grace.williams@example.com,920981959,good,FALSE,Cloud Tech,California,Age is required; Invalid Age; Invalid Join_Date
+EMP1360,Bob,Brown,25,Admin-Nevada,pending,12/28/2021,61643.69,bob.brown@example.com,2752334382,good,TRUE,Admin,Nevada,Invalid Join_Date
+EMP1361,Grace,Smith,35,Finance-Texas,active,7/20/2020,68111.69,grace.smith@example.com,6404120910,poor,FALSE,Finance,Texas,Invalid Join_Date
+EMP1362,David,Smith,40,HR-Florida,inactive,4/30/2024,97568.88,david.smith@example.com,7911244210,average,TRUE,HR,Florida,Invalid Join_Date
+EMP1363,Charlie,Johnson,35,Cloud Tech-Florida,active,8/28/2021,79118.28,charlie.johnson@example.com,7536170616,poor,TRUE,Cloud Tech,Florida,Invalid Join_Date
+EMP1364,Bob,Davis,30,HR-California,inactive,7/21/2022,104898.9,bob.davis@example.com,1366572239,excellent,TRUE,HR,California,Invalid Join_Date
+EMP1365,Frank,Davis,40,Cloud Tech-Florida,pending,11/27/2023,81671.3,frank.davis@example.com,2990155798,poor,TRUE,Cloud Tech,Florida,Invalid Join_Date
+EMP1367,David,Johnson,,Admin-Illinois,active,2021-08-11,89189.43,david.johnson@example.com,882351304,poor,TRUE,Admin,Illinois,Age is required; Invalid Age
+EMP1370,Bob,Brown,,Cloud Tech-Illinois,active,1/19/2022,72818.94,bob.brown@example.com,3461994236,good,TRUE,Cloud Tech,Illinois,Age is required; Invalid Age; Invalid Join_Date
+EMP1372,Bob,Johnson,35,HR-Florida,pending,12/19/2020,106961.68,bob.johnson@example.com,6395517207,poor,FALSE,HR,Florida,Invalid Join_Date
+EMP1373,Eva,Garcia,,Sales-Texas,pending,2020-01-10,71923.0,eva.garcia@example.com,4964985600,good,TRUE,Sales,Texas,Age is required; Invalid Age
+EMP1376,Charlie,Brown,,Admin-Florida,inactive,10/14/2020,63096.9,charlie.brown@example.com,5381649382,average,FALSE,Admin,Florida,Age is required; Invalid Age; Invalid Join_Date
+EMP1378,Heidi,Johnson,40,DevOps-Florida,inactive,12/25/2023,108792.43,heidi.johnson@example.com,3307704610,poor,TRUE,DevOps,Florida,Invalid Join_Date
+EMP1379,Bob,Smith,,Cloud Tech-New York,inactive,2020-07-03,69239.7,bob.smith@example.com,7295963903,excellent,FALSE,Cloud Tech,New York,Age is required; Invalid Age
+EMP1380,Charlie,Garcia,40,Sales-Nevada,inactive,1/30/2023,85756.42,charlie.garcia@example.com,907426087,average,TRUE,Sales,Nevada,Invalid Join_Date
+EMP1381,Eva,Miller,,HR-Illinois,active,2024-05-04,100328.62,eva.miller@example.com,501716444,average,TRUE,HR,Illinois,Age is required; Invalid Age
+EMP1384,Frank,Jones,,DevOps-Florida,active,6/15/2023,59746.45,frank.jones@example.com,2156321357,good,TRUE,DevOps,Florida,Age is required; Invalid Age; Invalid Join_Date
+EMP1385,David,Garcia,25,Sales-California,pending,7/29/2021,91780.04,david.garcia@example.com,40104144,poor,TRUE,Sales,California,Invalid Join_Date
+EMP1386,Eva,Williams,35,Sales-California,pending,10/23/2023,107062.66,eva.williams@example.com,9642297124,good,TRUE,Sales,California,Invalid Join_Date
+EMP1388,Frank,Smith,30,DevOps-Florida,inactive,10/18/2020,90419.79,frank.smith@example.com,7457314414,average,TRUE,DevOps,Florida,Invalid Join_Date
+EMP1389,Grace,Smith,40,Finance-Texas,pending,6/15/2024,111608.76,grace.smith@example.com,8331170302,good,TRUE,Finance,Texas,Invalid Join_Date
+EMP1393,Charlie,Garcia,,Finance-California,pending,2024-10-04,53388.65,charlie.garcia@example.com,4912711306,poor,TRUE,Finance,California,Age is required; Invalid Age
+EMP1394,Heidi,Williams,25,Cloud Tech-New York,inactive,7/23/2022,50047.32,heidi.williams@example.com,2407875417,good,FALSE,Cloud Tech,New York,Invalid Join_Date
+EMP1395,David,Brown,30,DevOps-California,active,11/25/2024,115290.79,david.brown@example.com,1563268684,poor,FALSE,DevOps,California,Invalid Join_Date
+EMP1396,Frank,Garcia,35,Cloud Tech-California,pending,8/21/2023,61586.76,frank.garcia@example.com,745106633,excellent,FALSE,Cloud Tech,California,Invalid Join_Date
+EMP1398,Bob,Garcia,30,Sales-New York,pending,10/24/2023,N/A,bob.garcia@example.com,1031310093,excellent,TRUE,Sales,New York,Invalid Salary; Invalid Join_Date
+EMP1401,Charlie,Brown,30,Cloud Tech-Illinois,pending,1/18/2020,92722.35,charlie.brown@example.com,4012897431,excellent,FALSE,Cloud Tech,Illinois,Invalid Join_Date
+EMP1402,Frank,Williams,30,DevOps-Nevada,active,4/23/2022,93125.32,frank.williams@example.com,5122572075,average,FALSE,DevOps,Nevada,Invalid Join_Date
+EMP1403,David,Smith,25,Cloud Tech-New York,active,4/22/2023,101100.64,david.smith@example.com,5024120956,average,FALSE,Cloud Tech,New York,Invalid Join_Date
+EMP1404,Grace,Garcia,35,Admin-New York,inactive,8/13/2023,55897.41,grace.garcia@example.com,9073710093,poor,FALSE,Admin,New York,Invalid Join_Date
+EMP1405,Eva,Brown,25,DevOps-California,active,11/26/2022,92484.88,eva.brown@example.com,3882211456,good,TRUE,DevOps,California,Invalid Join_Date
+EMP1407,Bob,Garcia,,Cloud Tech-California,inactive,9/27/2020,77078.68,bob.garcia@example.com,4589714801,average,TRUE,Cloud Tech,California,Age is required; Invalid Age; Invalid Join_Date
+EMP1409,Bob,Miller,25,Sales-Texas,active,6/20/2021,65102.01,bob.miller@example.com,3136148781,average,TRUE,Sales,Texas,Invalid Join_Date
+EMP1410,Grace,Williams,,HR-Nevada,pending,10/23/2022,103697.7,grace.williams@example.com,4556964429,excellent,TRUE,HR,Nevada,Age is required; Invalid Age; Invalid Join_Date
+EMP1411,Grace,Garcia,25,DevOps-Illinois,pending,6/15/2023,60687.63,grace.garcia@example.com,9859167953,excellent,FALSE,DevOps,Illinois,Invalid Join_Date
+EMP1412,Bob,Miller,,Admin-New York,pending,10/31/2021,77351.21,bob.miller@example.com,1072728497,good,FALSE,Admin,New York,Age is required; Invalid Age; Invalid Join_Date
+EMP1413,Bob,Smith,35,DevOps-Florida,pending,9/29/2024,66704.62,bob.smith@example.com,2474140702,poor,TRUE,DevOps,Florida,Invalid Join_Date
+EMP1414,Grace,Williams,25,Finance-Illinois,pending,4/22/2020,71650.3,grace.williams@example.com,4910740649,poor,TRUE,Finance,Illinois,Invalid Join_Date
+EMP1416,Frank,Jones,,Sales-Nevada,inactive,2020-07-12,76030.86,frank.jones@example.com,2369143074,good,TRUE,Sales,Nevada,Age is required; Invalid Age
+EMP1418,Bob,Garcia,40,Finance-Illinois,inactive,4/23/2020,84972.7,bob.garcia@example.com,9659234267,poor,TRUE,Finance,Illinois,Invalid Join_Date
+EMP1420,Alice,Johnson,25,Cloud Tech-New York,active,8/24/2022,75478.35,alice.johnson@example.com,6128758574,excellent,FALSE,Cloud Tech,New York,Invalid Join_Date
+EMP1424,Eva,Garcia,35,HR-Texas,pending,7/24/2022,50557.84,eva.garcia@example.com,104159148,average,TRUE,HR,Texas,Invalid Join_Date
+EMP1425,Eva,Jones,,Admin-Florida,inactive,4/26/2023,118030.04,eva.jones@example.com,7501980381,excellent,TRUE,Admin,Florida,Age is required; Invalid Age; Invalid Join_Date
+EMP1426,David,Smith,,Admin-New York,active,4/19/2022,51673.72,david.smith@example.com,8723244078,poor,FALSE,Admin,New York,Age is required; Invalid Age; Invalid Join_Date
+EMP1428,David,Smith,,Admin-Florida,inactive,2020-02-05,118079.15,david.smith@example.com,3170876013,good,TRUE,Admin,Florida,Age is required; Invalid Age
+EMP1429,Eva,Brown,25,Cloud Tech-New York,pending,4/25/2022,99059.28,eva.brown@example.com,6723849790,poor,FALSE,Cloud Tech,New York,Invalid Join_Date
+EMP1430,Bob,Smith,,Cloud Tech-Illinois,active,7/29/2023,107397.4,bob.smith@example.com,6202232882,poor,FALSE,Cloud Tech,Illinois,Age is required; Invalid Age; Invalid Join_Date
+EMP1431,Alice,Miller,40,DevOps-New York,active,8/20/2021,68269.37,alice.miller@example.com,7744197545,excellent,FALSE,DevOps,New York,Invalid Join_Date
+EMP1432,Grace,Jones,35,HR-Florida,inactive,4/23/2021,55228.12,grace.jones@example.com,6176620470,poor,TRUE,HR,Florida,Invalid Join_Date
+EMP1434,Frank,Brown,30,Finance-California,inactive,6/26/2021,109673.75,frank.brown@example.com,2774025882,excellent,FALSE,Finance,California,Invalid Join_Date
+EMP1435,Eva,Garcia,,Cloud Tech-New York,inactive,10/30/2020,56384.9,eva.garcia@example.com,5868122594,excellent,TRUE,Cloud Tech,New York,Age is required; Invalid Age; Invalid Join_Date
+EMP1437,Alice,Garcia,40,Finance-Illinois,pending,1/31/2023,67489.68,alice.garcia@example.com,2988425994,poor,FALSE,Finance,Illinois,Invalid Join_Date
+EMP1438,Charlie,Davis,25,Cloud Tech-Texas,active,9/24/2020,63869.31,charlie.davis@example.com,9961002310,good,FALSE,Cloud Tech,Texas,Invalid Join_Date
+EMP1439,Bob,Williams,,Sales-California,active,2/14/2020,119801.3,bob.williams@example.com,7753312660,average,TRUE,Sales,California,Age is required; Invalid Age; Invalid Join_Date
+EMP1440,Heidi,Smith,30,Cloud Tech-California,active,3/28/2020,115959.65,heidi.smith@example.com,941017589,excellent,TRUE,Cloud Tech,California,Invalid Join_Date
+EMP1441,Grace,Garcia,40,Finance-Texas,inactive,10/31/2023,79866.48,grace.garcia@example.com,2517629832,excellent,TRUE,Finance,Texas,Invalid Join_Date
+EMP1444,Grace,Brown,30,DevOps-Illinois,active,7/15/2023,119586.11,grace.brown@example.com,9815287338,average,TRUE,DevOps,Illinois,Invalid Join_Date
+EMP1445,Alice,Williams,40,DevOps-California,inactive,1/20/2023,104700.46,alice.williams@example.com,7855982175,good,TRUE,DevOps,California,Invalid Join_Date
+EMP1446,Frank,Williams,40,HR-New York,active,10/15/2021,91798.14,frank.williams@example.com,6191284116,good,FALSE,HR,New York,Invalid Join_Date
+EMP1447,Eva,Miller,25,Finance-Illinois,inactive,4/19/2024,90879.22,eva.miller@example.com,3098503445,good,FALSE,Finance,Illinois,Invalid Join_Date
+EMP1448,Charlie,Davis,25,Admin-Nevada,active,6/29/2021,87358.27,charlie.davis@example.com,5124189388,poor,FALSE,Admin,Nevada,Invalid Join_Date
+EMP1449,Alice,Miller,30,Sales-Florida,inactive,9/14/2024,119407.93,alice.miller@example.com,8469081973,excellent,TRUE,Sales,Florida,Invalid Join_Date
+EMP1450,David,Miller,,HR-Nevada,pending,2022-04-01,113978.6,david.miller@example.com,56435022,excellent,TRUE,HR,Nevada,Age is required; Invalid Age
+EMP1451,Frank,Miller,,Sales-New York,pending,1/20/2021,108568.78,frank.miller@example.com,8503719904,good,TRUE,Sales,New York,Age is required; Invalid Age; Invalid Join_Date
+EMP1452,Heidi,Miller,,HR-New York,inactive,3/18/2020,56318.02,heidi.miller@example.com,1699187239,excellent,FALSE,HR,New York,Age is required; Invalid Age; Invalid Join_Date
+EMP1456,Bob,Miller,35,HR-California,active,11/18/2020,101264.64,bob.miller@example.com,1955356032,average,FALSE,HR,California,Invalid Join_Date
+EMP1457,Heidi,Garcia,35,Admin-Nevada,pending,11/21/2023,112272.02,heidi.garcia@example.com,1903689002,poor,FALSE,Admin,Nevada,Invalid Join_Date
+EMP1458,Frank,Williams,30,DevOps-Illinois,active,2/13/2022,71477.63,frank.williams@example.com,102724054,good,TRUE,DevOps,Illinois,Invalid Join_Date
+EMP1459,Charlie,Williams,30,DevOps-Texas,pending,3/19/2023,77412.1,charlie.williams@example.com,9342967110,poor,FALSE,DevOps,Texas,Invalid Join_Date
+EMP1460,Alice,Johnson,30,Sales-California,pending,3/28/2021,94775.27,alice.johnson@example.com,4837537457,average,FALSE,Sales,California,Invalid Join_Date
+EMP1464,Charlie,Brown,40,Finance-Florida,inactive,1/23/2023,76274.33,charlie.brown@example.com,704496409,average,FALSE,Finance,Florida,Invalid Join_Date
+EMP1465,David,Davis,30,Finance-Texas,active,8/26/2021,51405.46,david.davis@example.com,4967066702,average,TRUE,Finance,Texas,Invalid Join_Date
+EMP1466,Bob,Garcia,25,HR-New York,inactive,11/25/2020,101238.96,bob.garcia@example.com,3626804084,average,TRUE,HR,New York,Invalid Join_Date
+EMP1467,Bob,Smith,35,Sales-Illinois,inactive,12/13/2023,52169.52,bob.smith@example.com,954930595,excellent,FALSE,Sales,Illinois,Invalid Join_Date
+EMP1468,Charlie,Jones,,Finance-New York,active,7/26/2020,73176.62,charlie.jones@example.com,6018648768,excellent,FALSE,Finance,New York,Age is required; Invalid Age; Invalid Join_Date
+EMP1469,Grace,Brown,,DevOps-Nevada,pending,6/27/2021,96241.85,grace.brown@example.com,9842673203,excellent,FALSE,DevOps,Nevada,Age is required; Invalid Age; Invalid Join_Date
+EMP1470,Bob,Jones,25,Finance-Illinois,pending,9/16/2024,84366.38,bob.jones@example.com,4138459608,excellent,FALSE,Finance,Illinois,Invalid Join_Date
+EMP1472,Alice,Williams,30,Admin-Nevada,inactive,6/16/2020,83149.95,alice.williams@example.com,4277070704,average,FALSE,Admin,Nevada,Invalid Join_Date
+EMP1475,David,Garcia,35,Sales-Texas,active,3/20/2024,98752.97,david.garcia@example.com,2290310286,excellent,FALSE,Sales,Texas,Invalid Join_Date
+EMP1476,Frank,Smith,,Finance-Illinois,active,2023-07-02,54268.86,frank.smith@example.com,9508304404,poor,TRUE,Finance,Illinois,Age is required; Invalid Age
+EMP1477,Grace,Garcia,,DevOps-Florida,pending,2024-10-12,66494.94,grace.garcia@example.com,8093511870,poor,FALSE,DevOps,Florida,Age is required; Invalid Age
+EMP1478,Grace,Smith,25,Sales-Illinois,pending,6/27/2024,90003.98,grace.smith@example.com,8133595615,average,FALSE,Sales,Illinois,Invalid Join_Date
+EMP1482,Eva,Jones,,Finance-Texas,pending,6/30/2023,91130.33,eva.jones@example.com,9026113988,good,FALSE,Finance,Texas,Age is required; Invalid Age; Invalid Join_Date
+EMP1483,Bob,Miller,40,Admin-New York,pending,4/19/2023,90787.4,bob.miller@example.com,8681809787,average,FALSE,Admin,New York,Invalid Join_Date
+EMP1485,Grace,Miller,35,Finance-Nevada,inactive,3/17/2023,92627.35,grace.miller@example.com,3751376514,average,FALSE,Finance,Nevada,Invalid Join_Date
+EMP1486,Eva,Williams,40,Admin-Illinois,pending,10/26/2023,98556.29,eva.williams@example.com,8815793762,poor,TRUE,Admin,Illinois,Invalid Join_Date
+EMP1490,Bob,Garcia,30,Finance-New York,inactive,2/26/2024,83912.22,bob.garcia@example.com,1206021287,average,FALSE,Finance,New York,Invalid Join_Date
+EMP1491,Frank,Jones,25,Sales-New York,active,9/29/2021,99669.86,frank.jones@example.com,6652683414,average,FALSE,Sales,New York,Invalid Join_Date
+EMP1492,Alice,Smith,30,Admin-New York,active,5/25/2021,52314.97,alice.smith@example.com,5999101575,excellent,FALSE,Admin,New York,Invalid Join_Date
+EMP1493,Frank,Miller,30,HR-California,inactive,10/31/2022,77785.96,frank.miller@example.com,7647229811,excellent,FALSE,HR,California,Invalid Join_Date
+EMP1495,Frank,Davis,35,Admin-California,pending,8/28/2024,98219.54,frank.davis@example.com,9413475097,good,TRUE,Admin,California,Invalid Join_Date
+EMP1496,Grace,Williams,25,Admin-Illinois,active,10/21/2024,65494.58,grace.williams@example.com,8986456521,average,TRUE,Admin,Illinois,Invalid Join_Date
+EMP1498,Alice,Smith,40,Admin-Nevada,active,5/16/2023,106060.54,alice.smith@example.com,4214477323,poor,FALSE,Admin,Nevada,Invalid Join_Date
+EMP1499,Eva,Brown,35,Finance-Florida,inactive,7/29/2022,67639.91,eva.brown@example.com,4913421387,excellent,TRUE,Finance,Florida,Invalid Join_Date
+EMP1500,Grace,Davis,,Cloud Tech-Texas,pending,9/18/2023,117653.98,grace.davis@example.com,2090883069,good,TRUE,Cloud Tech,Texas,Age is required; Invalid Age; Invalid Join_Date
+EMP1502,Frank,Jones,35,HR-Nevada,pending,8/27/2023,70915.38,frank.jones@example.com,1176741240,excellent,TRUE,HR,Nevada,Invalid Join_Date
+EMP1503,David,Garcia,25,Sales-Florida,pending,10/16/2021,97652.9,david.garcia@example.com,5131528546,excellent,FALSE,Sales,Florida,Invalid Join_Date
+EMP1506,Frank,Garcia,,HR-New York,pending,11/30/2024,89077.36,frank.garcia@example.com,2727423182,average,FALSE,HR,New York,Age is required; Invalid Age; Invalid Join_Date
+EMP1507,Heidi,Williams,30,DevOps-California,pending,7/13/2024,89132.22,heidi.williams@example.com,617893205,excellent,TRUE,DevOps,California,Invalid Join_Date
+EMP1512,Heidi,Davis,30,HR-Nevada,active,5/14/2024,55656.8,heidi.davis@example.com,6304483607,good,TRUE,HR,Nevada,Invalid Join_Date
+EMP1513,Charlie,Miller,35,DevOps-Texas,active,7/14/2022,69146.95,charlie.miller@example.com,5456676639,excellent,FALSE,DevOps,Texas,Invalid Join_Date
+EMP1514,Charlie,Johnson,,Admin-Florida,active,9/22/2020,93013.58,charlie.johnson@example.com,4735047638,average,TRUE,Admin,Florida,Age is required; Invalid Age; Invalid Join_Date
+EMP1515,Grace,Williams,40,Finance-Florida,active,3/18/2020,87364.78,grace.williams@example.com,2831995297,good,FALSE,Finance,Florida,Invalid Join_Date
+EMP1516,Alice,Garcia,35,Sales-New York,active,10/17/2023,50288.67,alice.garcia@example.com,61558107,excellent,FALSE,Sales,New York,Invalid Join_Date
+EMP1517,David,Miller,35,HR-New York,active,2/24/2022,85233.55,david.miller@example.com,3583286341,good,TRUE,HR,New York,Invalid Join_Date
+EMP1518,Bob,Garcia,25,HR-California,inactive,1/30/2024,86420.19,bob.garcia@example.com,5563830007,good,FALSE,HR,California,Invalid Join_Date
+EMP1519,Grace,Johnson,30,HR-Florida,inactive,3/16/2024,63189.82,grace.johnson@example.com,1867024402,excellent,FALSE,HR,Florida,Invalid Join_Date
+EMP1520,Grace,Garcia,25,Admin-New York,pending,9/25/2020,64783.32,grace.garcia@example.com,3041662410,average,FALSE,Admin,New York,Invalid Join_Date
+EMP1522,Eva,Miller,,Sales-Texas,pending,2020-08-04,96337.89,eva.miller@example.com,6394568043,poor,FALSE,Sales,Texas,Age is required; Invalid Age
+EMP1523,Alice,Davis,25,DevOps-Texas,inactive,6/28/2022,76617.76,alice.davis@example.com,7314976460,excellent,TRUE,DevOps,Texas,Invalid Join_Date
+EMP1524,Heidi,Johnson,30,Admin-Nevada,pending,7/14/2023,50651.32,heidi.johnson@example.com,3684748835,poor,FALSE,Admin,Nevada,Invalid Join_Date
+EMP1525,Bob,Davis,,HR-Illinois,pending,2023-06-12,59601.45,bob.davis@example.com,765817389,poor,FALSE,HR,Illinois,Age is required; Invalid Age
+EMP1526,Bob,Williams,,DevOps-Illinois,active,2021-01-08,57980.88,bob.williams@example.com,6375791451,poor,FALSE,DevOps,Illinois,Age is required; Invalid Age
+EMP1527,David,Johnson,,Admin-California,pending,2/17/2021,75054.53,david.johnson@example.com,1182379311,average,FALSE,Admin,California,Age is required; Invalid Age; Invalid Join_Date
+EMP1530,Bob,Smith,,Cloud Tech-Nevada,pending,7/26/2020,113334.56,bob.smith@example.com,3878753576,excellent,FALSE,Cloud Tech,Nevada,Age is required; Invalid Age; Invalid Join_Date
+EMP1531,Heidi,Garcia,35,HR-Florida,active,7/23/2020,106922.49,heidi.garcia@example.com,8811616201,excellent,TRUE,HR,Florida,Invalid Join_Date
+EMP1532,Eva,Smith,35,DevOps-California,inactive,2/21/2024,58113.07,eva.smith@example.com,8123710671,average,TRUE,DevOps,California,Invalid Join_Date
+EMP1533,Alice,Smith,25,Admin-Nevada,pending,12/15/2020,73006.26,alice.smith@example.com,8728660415,poor,TRUE,Admin,Nevada,Invalid Join_Date
+EMP1534,Eva,Williams,25,HR-California,active,8/21/2020,78054.43,eva.williams@example.com,4485959223,poor,TRUE,HR,California,Invalid Join_Date
+EMP1535,Eva,Miller,40,DevOps-Florida,inactive,8/21/2023,112028.67,eva.miller@example.com,8395894772,excellent,FALSE,DevOps,Florida,Invalid Join_Date
+EMP1536,Charlie,Garcia,25,Admin-Texas,inactive,4/24/2023,83787.24,charlie.garcia@example.com,5228705621,good,TRUE,Admin,Texas,Invalid Join_Date
+EMP1538,Charlie,Jones,40,Finance-Texas,inactive,6/21/2022,53218.06,charlie.jones@example.com,1097921582,average,FALSE,Finance,Texas,Invalid Join_Date
+EMP1539,Frank,Johnson,25,DevOps-Nevada,pending,4/20/2024,102053.67,frank.johnson@example.com,5034469458,average,FALSE,DevOps,Nevada,Invalid Join_Date
+EMP1544,David,Smith,,DevOps-Florida,inactive,7/31/2024,66450.0,david.smith@example.com,287675480,average,TRUE,DevOps,Florida,Age is required; Invalid Age; Invalid Join_Date
+EMP1545,Heidi,Garcia,25,Finance-Florida,inactive,8/31/2020,118646.95,heidi.garcia@example.com,3866675484,average,FALSE,Finance,Florida,Invalid Join_Date
+EMP1546,Alice,Jones,25,Finance-Florida,active,2/15/2023,88436.92,alice.jones@example.com,8193242686,excellent,FALSE,Finance,Florida,Invalid Join_Date
+EMP1547,Eva,Brown,,Sales-New York,pending,2023-07-10,81934.55,eva.brown@example.com,7418652056,poor,FALSE,Sales,New York,Age is required; Invalid Age
+EMP1548,Alice,Johnson,30,Finance-California,pending,4/20/2024,93383.06,alice.johnson@example.com,5639836519,average,FALSE,Finance,California,Invalid Join_Date
+EMP1549,Frank,Davis,40,Cloud Tech-Texas,pending,3/30/2021,50153.79,frank.davis@example.com,3758309450,good,TRUE,Cloud Tech,Texas,Invalid Join_Date
+EMP1550,Eva,Smith,,Sales-California,pending,2020-05-08,53204.47,eva.smith@example.com,5480940475,good,FALSE,Sales,California,Age is required; Invalid Age
+EMP1552,Grace,Jones,30,Finance-New York,pending,11/23/2021,57543.6,grace.jones@example.com,2781050921,good,TRUE,Finance,New York,Invalid Join_Date
+EMP1553,Bob,Brown,40,Finance-Nevada,pending,10/29/2022,59424.52,bob.brown@example.com,2161070517,good,FALSE,Finance,Nevada,Invalid Join_Date
+EMP1554,Alice,Smith,,Finance-Illinois,inactive,2022-07-11,104675.7,alice.smith@example.com,4390552957,poor,TRUE,Finance,Illinois,Age is required; Invalid Age
+EMP1555,Charlie,Garcia,30,Cloud Tech-Florida,pending,5/14/2023,92431.25,charlie.garcia@example.com,660138240,average,FALSE,Cloud Tech,Florida,Invalid Join_Date
+EMP1556,Grace,Garcia,40,Sales-Nevada,active,7/14/2021,77850.9,grace.garcia@example.com,2704938619,average,TRUE,Sales,Nevada,Invalid Join_Date
+EMP1557,Eva,Miller,40,Admin-New York,inactive,5/18/2023,99001.0,eva.miller@example.com,4485157918,good,TRUE,Admin,New York,Invalid Join_Date
+EMP1558,Eva,Garcia,,HR-Nevada,pending,2023-07-02,94280.83,eva.garcia@example.com,7111212589,good,TRUE,HR,Nevada,Age is required; Invalid Age
+EMP1559,Eva,Miller,35,DevOps-New York,pending,8/24/2023,118262.56,eva.miller@example.com,2035713431,average,TRUE,DevOps,New York,Invalid Join_Date
+EMP1561,Grace,Williams,,HR-Florida,active,2022-06-12,57452.93,grace.williams@example.com,3343244740,good,TRUE,HR,Florida,Age is required; Invalid Age
+EMP1564,David,Brown,,Finance-New York,pending,5/25/2024,105778.36,david.brown@example.com,8841834373,good,TRUE,Finance,New York,Age is required; Invalid Age; Invalid Join_Date
+EMP1566,Eva,Johnson,30,Sales-Florida,active,7/21/2023,99324.03,eva.johnson@example.com,9690515025,excellent,FALSE,Sales,Florida,Invalid Join_Date
+EMP1567,David,Garcia,30,HR-Florida,active,10/30/2023,55212.83,david.garcia@example.com,7551254277,excellent,TRUE,HR,Florida,Invalid Join_Date
+EMP1568,Bob,Davis,40,Cloud Tech-Florida,inactive,2/13/2023,68496.77,bob.davis@example.com,2079799666,average,FALSE,Cloud Tech,Florida,Invalid Join_Date
+EMP1569,Eva,Davis,25,HR-Florida,pending,11/13/2020,52795.84,eva.davis@example.com,3459576402,poor,FALSE,HR,Florida,Invalid Join_Date
+EMP1570,Alice,Miller,,DevOps-California,inactive,2024-05-06,90087.39,alice.miller@example.com,8166496901,poor,FALSE,DevOps,California,Age is required; Invalid Age
+EMP1571,Frank,Williams,,Admin-New York,pending,5/19/2020,105038.08,frank.williams@example.com,8249839224,average,FALSE,Admin,New York,Age is required; Invalid Age; Invalid Join_Date
+EMP1572,Grace,Smith,25,HR-New York,active,9/20/2023,73231.85,grace.smith@example.com,142576269,poor,FALSE,HR,New York,Invalid Join_Date
+EMP1573,David,Johnson,,Sales-Florida,pending,8/13/2024,102649.36,david.johnson@example.com,2324412335,poor,FALSE,Sales,Florida,Age is required; Invalid Age; Invalid Join_Date
+EMP1576,Frank,Jones,,Sales-Florida,inactive,3/30/2020,70750.38,frank.jones@example.com,2526546967,poor,FALSE,Sales,Florida,Age is required; Invalid Age; Invalid Join_Date
+EMP1577,Frank,Miller,,Cloud Tech-Texas,active,2024-02-05,N/A,frank.miller@example.com,1579039234,excellent,TRUE,Cloud Tech,Texas,Age is required; Invalid Age; Invalid Salary
+EMP1579,David,Johnson,,DevOps-Nevada,inactive,8/17/2023,107172.8,david.johnson@example.com,7303461561,excellent,TRUE,DevOps,Nevada,Age is required; Invalid Age; Invalid Join_Date
+EMP1580,Charlie,Miller,25,Finance-Nevada,inactive,3/18/2020,56126.46,charlie.miller@example.com,6244670461,poor,TRUE,Finance,Nevada,Invalid Join_Date
+EMP1581,Eva,Smith,,Cloud Tech-Illinois,active,6/13/2021,78534.29,eva.smith@example.com,2681715159,average,TRUE,Cloud Tech,Illinois,Age is required; Invalid Age; Invalid Join_Date
+EMP1582,Grace,Brown,40,HR-Texas,inactive,2023-10-10,N/A,grace.brown@example.com,2529867075,good,FALSE,HR,Texas,Invalid Salary
+EMP1583,Bob,Johnson,,Cloud Tech-Nevada,active,2022-02-01,114963.34,bob.johnson@example.com,6046419784,excellent,FALSE,Cloud Tech,Nevada,Age is required; Invalid Age
+EMP1584,Eva,Miller,,Cloud Tech-California,inactive,2/20/2022,77657.93,eva.miller@example.com,7585126860,poor,FALSE,Cloud Tech,California,Age is required; Invalid Age; Invalid Join_Date
+EMP1586,Eva,Miller,30,HR-Nevada,pending,8/19/2023,76119.14,eva.miller@example.com,740177508,good,FALSE,HR,Nevada,Invalid Join_Date
+EMP1588,Bob,Brown,35,Admin-Nevada,pending,1/26/2024,74069.62,bob.brown@example.com,5607540914,good,FALSE,Admin,Nevada,Invalid Join_Date
+EMP1590,Alice,Smith,,Finance-Nevada,pending,5/29/2020,70345.69,alice.smith@example.com,7645793896,excellent,TRUE,Finance,Nevada,Age is required; Invalid Age; Invalid Join_Date
+EMP1592,David,Jones,25,HR-Illinois,active,1/31/2021,72245.02,david.jones@example.com,1546602415,poor,TRUE,HR,Illinois,Invalid Join_Date
+EMP1593,Eva,Brown,,Admin-Illinois,pending,1/16/2022,106538.98,eva.brown@example.com,1394498829,excellent,FALSE,Admin,Illinois,Age is required; Invalid Age; Invalid Join_Date
+EMP1594,Charlie,Brown,25,HR-New York,active,12/29/2023,101787.14,charlie.brown@example.com,5973642479,good,FALSE,HR,New York,Invalid Join_Date
+EMP1596,Eva,Jones,40,Sales-Texas,active,8/15/2023,92463.94,eva.jones@example.com,2447951329,average,TRUE,Sales,Texas,Invalid Join_Date
+EMP1597,Charlie,Davis,,Admin-California,pending,12/20/2024,93863.32,charlie.davis@example.com,5319497968,excellent,FALSE,Admin,California,Age is required; Invalid Age; Invalid Join_Date
+EMP1598,Alice,Brown,,DevOps-Texas,pending,3/31/2023,78359.41,alice.brown@example.com,5867805554,good,FALSE,DevOps,Texas,Age is required; Invalid Age; Invalid Join_Date
+EMP1599,Alice,Miller,,HR-Illinois,pending,8/24/2022,95773.57,alice.miller@example.com,7277382645,excellent,FALSE,HR,Illinois,Age is required; Invalid Age; Invalid Join_Date
+EMP1602,Charlie,Brown,,Admin-Florida,active,2021-01-01,89645.01,charlie.brown@example.com,9596604872,good,TRUE,Admin,Florida,Age is required; Invalid Age
+EMP1604,Frank,Davis,30,Cloud Tech-Nevada,active,11/26/2022,113540.83,frank.davis@example.com,1942268652,good,TRUE,Cloud Tech,Nevada,Invalid Join_Date
+EMP1605,Heidi,Williams,40,Cloud Tech-Texas,pending,10/25/2021,57225.75,heidi.williams@example.com,6945515887,average,TRUE,Cloud Tech,Texas,Invalid Join_Date
+EMP1606,Eva,Davis,35,Sales-Illinois,pending,12/22/2020,76366.17,eva.davis@example.com,6367747225,excellent,FALSE,Sales,Illinois,Invalid Join_Date
+EMP1607,Bob,Garcia,,HR-Florida,active,11/23/2022,78408.95,bob.garcia@example.com,4085721695,excellent,TRUE,HR,Florida,Age is required; Invalid Age; Invalid Join_Date
+EMP1608,Frank,Brown,40,Finance-Illinois,active,10/24/2022,111742.4,frank.brown@example.com,6630932997,average,TRUE,Finance,Illinois,Invalid Join_Date
+EMP1610,Bob,Jones,30,Finance-California,pending,8/20/2020,83706.17,bob.jones@example.com,7150968831,average,FALSE,Finance,California,Invalid Join_Date
+EMP1611,David,Johnson,,Admin-Nevada,inactive,2/15/2020,67056.92,david.johnson@example.com,7532735240,average,TRUE,Admin,Nevada,Age is required; Invalid Age; Invalid Join_Date
+EMP1612,Charlie,Brown,30,DevOps-Illinois,active,12/29/2024,90058.85,charlie.brown@example.com,397739731,poor,FALSE,DevOps,Illinois,Invalid Join_Date
+EMP1613,Eva,Johnson,30,Sales-Florida,pending,2/28/2023,94633.59,eva.johnson@example.com,7819523709,average,TRUE,Sales,Florida,Invalid Join_Date
+EMP1614,Eva,Miller,25,Admin-Florida,pending,8/23/2022,110711.17,eva.miller@example.com,687616480,excellent,TRUE,Admin,Florida,Invalid Join_Date
+EMP1615,Grace,Williams,,Admin-Illinois,active,6/30/2023,96175.41,grace.williams@example.com,9807704604,average,TRUE,Admin,Illinois,Age is required; Invalid Age; Invalid Join_Date
+EMP1616,Frank,Smith,40,Sales-Illinois,active,4/15/2021,76474.79,frank.smith@example.com,6876112490,excellent,TRUE,Sales,Illinois,Invalid Join_Date
+EMP1619,Bob,Williams,25,Finance-Nevada,active,5/20/2023,N/A,bob.williams@example.com,7494902283,good,FALSE,Finance,Nevada,Invalid Salary; Invalid Join_Date
+EMP1620,Grace,Brown,,Finance-California,active,11/29/2023,87087.16,grace.brown@example.com,359544293,poor,FALSE,Finance,California,Age is required; Invalid Age; Invalid Join_Date
+EMP1622,Grace,Davis,30,HR-Florida,active,10/25/2024,55867.23,grace.davis@example.com,3039429044,excellent,FALSE,HR,Florida,Invalid Join_Date
+EMP1624,Bob,Jones,,Cloud Tech-Florida,pending,2/24/2021,98143.67,bob.jones@example.com,5856728726,excellent,FALSE,Cloud Tech,Florida,Age is required; Invalid Age; Invalid Join_Date
+EMP1625,Frank,Johnson,25,Admin-Florida,pending,4/13/2023,67754.29,frank.johnson@example.com,6015343323,average,TRUE,Admin,Florida,Invalid Join_Date
+EMP1626,Grace,Jones,,HR-Illinois,inactive,10/25/2023,77821.79,grace.jones@example.com,9135779082,average,FALSE,HR,Illinois,Age is required; Invalid Age; Invalid Join_Date
+EMP1627,Heidi,Miller,30,HR-Illinois,pending,9/17/2022,67764.44,heidi.miller@example.com,3506158147,poor,FALSE,HR,Illinois,Invalid Join_Date
+EMP1628,Frank,Davis,40,DevOps-New York,pending,8/31/2020,102346.99,frank.davis@example.com,8810798333,excellent,TRUE,DevOps,New York,Invalid Join_Date
+EMP1629,Charlie,Davis,25,Admin-Illinois,inactive,5/28/2024,73690.65,charlie.davis@example.com,2337209483,good,TRUE,Admin,Illinois,Invalid Join_Date
+EMP1631,Grace,Brown,25,Cloud Tech-California,active,1/29/2022,55602.78,grace.brown@example.com,9977180512,good,FALSE,Cloud Tech,California,Invalid Join_Date
+EMP1634,Eva,Johnson,30,Cloud Tech-Illinois,pending,11/22/2022,98891.48,eva.johnson@example.com,9970469471,good,TRUE,Cloud Tech,Illinois,Invalid Join_Date
+EMP1635,Alice,Johnson,35,Admin-Nevada,active,11/18/2020,56079.0,alice.johnson@example.com,5878444834,average,TRUE,Admin,Nevada,Invalid Join_Date
+EMP1636,Grace,Smith,35,DevOps-Florida,inactive,4/15/2023,N/A,grace.smith@example.com,4884712704,good,TRUE,DevOps,Florida,Invalid Salary; Invalid Join_Date
+EMP1637,Bob,Davis,25,Sales-California,pending,8/26/2024,89137.97,bob.davis@example.com,8772216416,average,FALSE,Sales,California,Invalid Join_Date
+EMP1638,Frank,Johnson,35,Admin-Illinois,active,7/20/2022,115079.97,frank.johnson@example.com,5823133483,excellent,TRUE,Admin,Illinois,Invalid Join_Date
+EMP1639,Eva,Garcia,30,Finance-Illinois,active,2/18/2023,55067.02,eva.garcia@example.com,5871493924,poor,TRUE,Finance,Illinois,Invalid Join_Date
+EMP1640,Bob,Miller,,HR-Illinois,pending,5/27/2021,98593.43,bob.miller@example.com,2362292586,average,TRUE,HR,Illinois,Age is required; Invalid Age; Invalid Join_Date
+EMP1642,Heidi,Garcia,25,HR-Texas,inactive,7/21/2023,105205.92,heidi.garcia@example.com,5557469659,poor,FALSE,HR,Texas,Invalid Join_Date
+EMP1644,David,Garcia,35,Cloud Tech-Florida,pending,3/13/2024,107475.23,david.garcia@example.com,4450566587,average,FALSE,Cloud Tech,Florida,Invalid Join_Date
+EMP1645,Charlie,Jones,40,HR-California,active,3/20/2023,68835.3,charlie.jones@example.com,3398741131,good,TRUE,HR,California,Invalid Join_Date
+EMP1646,David,Jones,40,DevOps-New York,active,2/15/2024,66943.96,david.jones@example.com,5797067348,poor,TRUE,DevOps,New York,Invalid Join_Date
+EMP1647,David,Smith,30,Admin-Illinois,inactive,11/15/2020,104525.69,david.smith@example.com,9601054856,excellent,FALSE,Admin,Illinois,Invalid Join_Date
+EMP1648,Bob,Garcia,40,Sales-Texas,pending,3/27/2020,109360.74,bob.garcia@example.com,4172156228,average,TRUE,Sales,Texas,Invalid Join_Date
+EMP1650,Eva,Davis,40,Admin-Illinois,active,4/20/2020,86801.48,eva.davis@example.com,4884021556,good,FALSE,Admin,Illinois,Invalid Join_Date
+EMP1651,Alice,Garcia,,HR-Florida,pending,2024-08-05,62236.03,alice.garcia@example.com,3257375533,excellent,TRUE,HR,Florida,Age is required; Invalid Age
+EMP1653,Frank,Jones,35,Sales-California,active,1/28/2023,68399.43,frank.jones@example.com,8085096084,excellent,FALSE,Sales,California,Invalid Join_Date
+EMP1655,Frank,Jones,40,HR-Florida,active,3/16/2023,59179.74,frank.jones@example.com,1828197930,excellent,FALSE,HR,Florida,Invalid Join_Date
+EMP1657,Charlie,Williams,30,Finance-Texas,active,5/13/2022,84971.85,charlie.williams@example.com,7860694095,average,FALSE,Finance,Texas,Invalid Join_Date
+EMP1658,Frank,Brown,40,HR-California,pending,10/24/2024,89748.42,frank.brown@example.com,35624394,good,FALSE,HR,California,Invalid Join_Date
+EMP1659,Charlie,Johnson,25,Admin-California,inactive,9/14/2024,94090.35,charlie.johnson@example.com,8739592322,good,FALSE,Admin,California,Invalid Join_Date
+EMP1660,Frank,Garcia,35,HR-California,pending,2/15/2023,115229.12,frank.garcia@example.com,4210890284,poor,TRUE,HR,California,Invalid Join_Date
+EMP1661,Alice,Williams,40,Cloud Tech-California,pending,5/25/2023,63927.07,alice.williams@example.com,1553334263,good,TRUE,Cloud Tech,California,Invalid Join_Date
+EMP1663,Bob,Miller,40,Sales-California,inactive,7/17/2023,116961.61,bob.miller@example.com,3607763368,excellent,TRUE,Sales,California,Invalid Join_Date
+EMP1665,Charlie,Jones,35,Admin-California,inactive,8/30/2023,70394.94,charlie.jones@example.com,7955633184,excellent,FALSE,Admin,California,Invalid Join_Date
+EMP1666,Grace,Miller,35,Finance-California,pending,4/17/2023,86465.5,grace.miller@example.com,7481700665,poor,TRUE,Finance,California,Invalid Join_Date
+EMP1667,Charlie,Brown,30,Cloud Tech-New York,pending,4/25/2021,96341.58,charlie.brown@example.com,1554164315,excellent,FALSE,Cloud Tech,New York,Invalid Join_Date
+EMP1668,Bob,Jones,30,Admin-Florida,active,7/14/2020,54465.47,bob.jones@example.com,7045023289,excellent,FALSE,Admin,Florida,Invalid Join_Date
+EMP1669,Alice,Davis,25,Finance-Illinois,active,7/31/2020,68371.66,alice.davis@example.com,2822700933,poor,FALSE,Finance,Illinois,Invalid Join_Date
+EMP1671,Charlie,Miller,25,Cloud Tech-Nevada,inactive,10/28/2024,114069.07,charlie.miller@example.com,5120734653,good,TRUE,Cloud Tech,Nevada,Invalid Join_Date
+EMP1672,Heidi,Miller,,HR-Illinois,inactive,2020-03-10,117867.96,heidi.miller@example.com,9500507025,poor,FALSE,HR,Illinois,Age is required; Invalid Age
+EMP1673,Charlie,Miller,,Sales-Florida,pending,3/13/2024,94509.58,charlie.miller@example.com,869822104,average,FALSE,Sales,Florida,Age is required; Invalid Age; Invalid Join_Date
+EMP1676,Charlie,Brown,35,HR-Florida,pending,1/18/2020,98143.9,charlie.brown@example.com,5917793237,excellent,FALSE,HR,Florida,Invalid Join_Date
+EMP1677,Heidi,Garcia,35,Cloud Tech-Florida,inactive,2023-07-05,N/A,heidi.garcia@example.com,2231164912,average,TRUE,Cloud Tech,Florida,Invalid Salary
+EMP1678,Frank,Johnson,30,Finance-Illinois,inactive,3/19/2022,67492.73,frank.johnson@example.com,3424579888,excellent,TRUE,Finance,Illinois,Invalid Join_Date
+EMP1679,Grace,Johnson,40,Admin-California,active,5/14/2022,93772.61,grace.johnson@example.com,4256529059,poor,FALSE,Admin,California,Invalid Join_Date
+EMP1680,Eva,Garcia,35,DevOps-Nevada,pending,7/14/2024,68817.54,eva.garcia@example.com,3202032649,excellent,FALSE,DevOps,Nevada,Invalid Join_Date
+EMP1681,Bob,Jones,30,Admin-California,active,7/28/2023,81874.01,bob.jones@example.com,9775396736,good,TRUE,Admin,California,Invalid Join_Date
+EMP1683,Bob,Brown,35,HR-New York,pending,6/16/2022,100897.49,bob.brown@example.com,4578715840,average,TRUE,HR,New York,Invalid Join_Date
+EMP1685,Frank,Miller,40,DevOps-Texas,inactive,6/13/2020,109048.24,frank.miller@example.com,8425476817,poor,FALSE,DevOps,Texas,Invalid Join_Date
+EMP1686,Alice,Miller,35,Finance-Texas,pending,8/20/2022,62712.26,alice.miller@example.com,2683230357,average,FALSE,Finance,Texas,Invalid Join_Date
+EMP1687,Eva,Jones,40,Cloud Tech-Texas,pending,5/24/2021,76935.85,eva.jones@example.com,9298808582,good,TRUE,Cloud Tech,Texas,Invalid Join_Date
+EMP1688,David,Davis,25,Admin-Florida,pending,4/27/2024,56577.22,david.davis@example.com,8252129327,poor,TRUE,Admin,Florida,Invalid Join_Date
+EMP1689,David,Johnson,40,Finance-Nevada,inactive,10/23/2021,61102.8,david.johnson@example.com,9634064685,good,TRUE,Finance,Nevada,Invalid Join_Date
+EMP1691,David,Miller,25,Admin-Nevada,inactive,10/26/2021,51054.74,david.miller@example.com,3991062271,excellent,FALSE,Admin,Nevada,Invalid Join_Date
+EMP1693,Charlie,Brown,35,Cloud Tech-New York,active,10/20/2022,56398.11,charlie.brown@example.com,3426192371,excellent,FALSE,Cloud Tech,New York,Invalid Join_Date
+EMP1695,Heidi,Brown,30,HR-Illinois,pending,3/29/2024,74312.24,heidi.brown@example.com,3741897214,poor,FALSE,HR,Illinois,Invalid Join_Date
+EMP1696,David,Davis,25,DevOps-Florida,inactive,1/23/2024,59431.25,david.davis@example.com,4064176926,poor,TRUE,DevOps,Florida,Invalid Join_Date
+EMP1697,Heidi,Johnson,40,Sales-California,pending,11/28/2023,84306.44,heidi.johnson@example.com,4381199536,average,FALSE,Sales,California,Invalid Join_Date
+EMP1699,Charlie,Williams,25,Sales-New York,inactive,8/28/2021,107359.3,charlie.williams@example.com,4510173972,excellent,FALSE,Sales,New York,Invalid Join_Date
+EMP1700,Heidi,Johnson,25,DevOps-Illinois,inactive,2024-11-02,N/A,heidi.johnson@example.com,9641789968,good,FALSE,DevOps,Illinois,Invalid Salary
+EMP1701,Frank,Garcia,,Admin-California,pending,2020-09-05,96080.26,frank.garcia@example.com,8609191910,average,FALSE,Admin,California,Age is required; Invalid Age
+EMP1702,Grace,Smith,30,Sales-Nevada,inactive,4/17/2024,88602.75,grace.smith@example.com,3599660576,average,TRUE,Sales,Nevada,Invalid Join_Date
+EMP1703,Frank,Garcia,40,DevOps-California,active,7/16/2020,86624.04,frank.garcia@example.com,9806603919,good,TRUE,DevOps,California,Invalid Join_Date
+EMP1704,Charlie,Jones,30,Cloud Tech-New York,active,9/21/2022,63413.16,charlie.jones@example.com,5146074554,good,TRUE,Cloud Tech,New York,Invalid Join_Date
+EMP1705,Grace,Jones,40,Sales-Illinois,pending,4/23/2023,67915.7,grace.jones@example.com,3470574237,good,FALSE,Sales,Illinois,Invalid Join_Date
+EMP1706,Bob,Brown,25,Admin-Nevada,inactive,12/27/2024,108245.44,bob.brown@example.com,8565271558,poor,TRUE,Admin,Nevada,Invalid Join_Date
+EMP1708,Eva,Garcia,,Cloud Tech-Nevada,active,2024-04-09,71273.32,eva.garcia@example.com,2634755751,good,FALSE,Cloud Tech,Nevada,Age is required; Invalid Age
+EMP1709,Bob,Garcia,25,DevOps-New York,pending,2/28/2022,63262.23,bob.garcia@example.com,2501394883,good,FALSE,DevOps,New York,Invalid Join_Date
+EMP1710,David,Davis,,DevOps-New York,pending,3/14/2024,89069.91,david.davis@example.com,8826913118,good,FALSE,DevOps,New York,Age is required; Invalid Age; Invalid Join_Date
+EMP1711,Frank,Johnson,40,DevOps-Nevada,inactive,12/13/2024,57287.17,frank.johnson@example.com,6425856260,average,TRUE,DevOps,Nevada,Invalid Join_Date
+EMP1712,Grace,Smith,,HR-Nevada,active,12/29/2022,119890.35,grace.smith@example.com,4991537037,average,TRUE,HR,Nevada,Age is required; Invalid Age; Invalid Join_Date
+EMP1713,Frank,Brown,35,Sales-California,inactive,4/24/2022,103492.91,frank.brown@example.com,2407333372,poor,FALSE,Sales,California,Invalid Join_Date
+EMP1714,Frank,Garcia,,Admin-Illinois,pending,3/14/2021,76254.42,frank.garcia@example.com,2043097767,excellent,FALSE,Admin,Illinois,Age is required; Invalid Age; Invalid Join_Date
+EMP1716,Alice,Williams,,Admin-California,active,2021-07-09,118907.61,alice.williams@example.com,4546553584,excellent,TRUE,Admin,California,Age is required; Invalid Age
+EMP1717,Frank,Brown,25,DevOps-California,pending,11/13/2022,88942.62,frank.brown@example.com,1253892186,average,FALSE,DevOps,California,Invalid Join_Date
+EMP1718,Charlie,Garcia,25,Cloud Tech-Florida,inactive,11/15/2020,59688.57,charlie.garcia@example.com,8519358373,average,FALSE,Cloud Tech,Florida,Invalid Join_Date
+EMP1719,David,Brown,30,HR-California,active,3/14/2023,77985.88,david.brown@example.com,9079779611,average,TRUE,HR,California,Invalid Join_Date
+EMP1720,Bob,Johnson,35,Finance-New York,inactive,8/18/2024,112931.69,bob.johnson@example.com,878057214,poor,FALSE,Finance,New York,Invalid Join_Date
+EMP1721,Bob,Williams,,DevOps-California,active,2024-05-02,106583.88,bob.williams@example.com,1494097625,good,TRUE,DevOps,California,Age is required; Invalid Age
+EMP1723,Alice,Smith,40,Cloud Tech-California,pending,3/25/2020,72352.16,alice.smith@example.com,2895090590,average,TRUE,Cloud Tech,California,Invalid Join_Date
+EMP1724,Frank,Smith,,DevOps-New York,active,4/13/2020,97154.47,frank.smith@example.com,1918623391,good,TRUE,DevOps,New York,Age is required; Invalid Age; Invalid Join_Date
+EMP1725,Heidi,Jones,,Sales-Illinois,active,3/30/2021,80235.5,heidi.jones@example.com,2071511695,good,FALSE,Sales,Illinois,Age is required; Invalid Age; Invalid Join_Date
+EMP1726,Charlie,Williams,30,HR-Texas,inactive,3/16/2023,102172.05,charlie.williams@example.com,6672521451,poor,FALSE,HR,Texas,Invalid Join_Date
+EMP1728,Heidi,Jones,,Admin-Florida,inactive,8/28/2023,89993.15,heidi.jones@example.com,1571840907,average,TRUE,Admin,Florida,Age is required; Invalid Age; Invalid Join_Date
+EMP1729,David,Brown,30,Cloud Tech-California,inactive,10/24/2021,97931.66,david.brown@example.com,512080055,average,TRUE,Cloud Tech,California,Invalid Join_Date
+EMP1730,Bob,Williams,40,Finance-California,inactive,1/25/2021,72451.69,bob.williams@example.com,4099512396,poor,TRUE,Finance,California,Invalid Join_Date
+EMP1733,Bob,Garcia,25,DevOps-Texas,active,6/25/2023,114871.08,bob.garcia@example.com,4415298216,average,FALSE,DevOps,Texas,Invalid Join_Date
+EMP1734,Eva,Johnson,25,HR-Nevada,active,9/16/2021,81504.31,eva.johnson@example.com,3929578670,excellent,FALSE,HR,Nevada,Invalid Join_Date
+EMP1735,David,Williams,,Admin-New York,pending,2022-07-12,102524.86,david.williams@example.com,8153523735,poor,FALSE,Admin,New York,Age is required; Invalid Age
+EMP1736,Charlie,Brown,25,Finance-Illinois,pending,12/14/2022,53043.74,charlie.brown@example.com,507918157,excellent,TRUE,Finance,Illinois,Invalid Join_Date
+EMP1737,Eva,Jones,30,DevOps-Illinois,inactive,4/18/2020,82547.26,eva.jones@example.com,9988683451,excellent,TRUE,DevOps,Illinois,Invalid Join_Date
+EMP1739,Bob,Brown,25,HR-Nevada,inactive,4/18/2021,118585.5,bob.brown@example.com,7158796473,average,TRUE,HR,Nevada,Invalid Join_Date
+EMP1740,Bob,Davis,35,Finance-Illinois,pending,6/29/2020,63049.22,bob.davis@example.com,803149981,poor,TRUE,Finance,Illinois,Invalid Join_Date
+EMP1741,Heidi,Miller,,DevOps-Texas,active,5/21/2021,114558.91,heidi.miller@example.com,5080046357,average,FALSE,DevOps,Texas,Age is required; Invalid Age; Invalid Join_Date
+EMP1744,Alice,Williams,,HR-New York,active,11/30/2021,112802.27,alice.williams@example.com,63140351,excellent,FALSE,HR,New York,Age is required; Invalid Age; Invalid Join_Date
+EMP1745,Bob,Johnson,40,Sales-Nevada,pending,11/22/2024,93786.72,bob.johnson@example.com,6356022938,poor,FALSE,Sales,Nevada,Invalid Join_Date
+EMP1746,David,Williams,,Admin-Florida,inactive,5/24/2023,73049.93,david.williams@example.com,4694346065,good,FALSE,Admin,Florida,Age is required; Invalid Age; Invalid Join_Date
+EMP1747,David,Davis,30,Sales-Illinois,pending,6/26/2024,64161.72,david.davis@example.com,6437490606,excellent,TRUE,Sales,Illinois,Invalid Join_Date
+EMP1748,Charlie,Smith,40,Admin-Nevada,pending,11/19/2020,72224.73,charlie.smith@example.com,2311127127,average,FALSE,Admin,Nevada,Invalid Join_Date
+EMP1751,Eva,Jones,30,Admin-Texas,active,1/13/2021,51833.88,eva.jones@example.com,771130620,average,TRUE,Admin,Texas,Invalid Join_Date
+EMP1752,Eva,Johnson,,Sales-Illinois,active,2023-06-05,66252.78,eva.johnson@example.com,1369572789,excellent,TRUE,Sales,Illinois,Age is required; Invalid Age
+EMP1753,Frank,Johnson,25,DevOps-Florida,active,10/25/2022,109229.68,frank.johnson@example.com,8335090253,poor,TRUE,DevOps,Florida,Invalid Join_Date
+EMP1755,Grace,Miller,25,HR-Florida,active,2/29/2024,96993.74,grace.miller@example.com,1323570712,poor,FALSE,HR,Florida,Invalid Join_Date
+EMP1756,David,Johnson,25,Admin-Florida,pending,9/30/2022,98150.39,david.johnson@example.com,9848228500,good,TRUE,Admin,Florida,Invalid Join_Date
+EMP1757,David,Williams,40,Finance-Texas,pending,2/14/2024,107703.0,david.williams@example.com,1688092549,average,FALSE,Finance,Texas,Invalid Join_Date
+EMP1758,Grace,Smith,,DevOps-Illinois,pending,2023-03-01,86766.14,grace.smith@example.com,2130609068,poor,TRUE,DevOps,Illinois,Age is required; Invalid Age
+EMP1759,Alice,Davis,,Cloud Tech-Florida,inactive,8/20/2024,111443.69,alice.davis@example.com,1309810795,poor,TRUE,Cloud Tech,Florida,Age is required; Invalid Age; Invalid Join_Date
+EMP1760,David,Brown,,Sales-Florida,pending,3/21/2020,89039.07,david.brown@example.com,4967379456,good,FALSE,Sales,Florida,Age is required; Invalid Age; Invalid Join_Date
+EMP1761,Alice,Johnson,30,HR-Florida,inactive,12/16/2024,71318.79,alice.johnson@example.com,7278532425,poor,FALSE,HR,Florida,Invalid Join_Date
+EMP1762,Heidi,Jones,30,Finance-California,pending,4/21/2020,98296.71,heidi.jones@example.com,4250642075,poor,FALSE,Finance,California,Invalid Join_Date
+EMP1763,Heidi,Johnson,40,Cloud Tech-Nevada,pending,8/19/2020,62584.0,heidi.johnson@example.com,8362536666,good,FALSE,Cloud Tech,Nevada,Invalid Join_Date
+EMP1764,Charlie,Jones,40,Finance-California,inactive,2/21/2020,62521.5,charlie.jones@example.com,7767555627,average,TRUE,Finance,California,Invalid Join_Date
+EMP1765,David,Williams,40,Cloud Tech-California,inactive,11/17/2023,95400.35,david.williams@example.com,3333939577,poor,TRUE,Cloud Tech,California,Invalid Join_Date
+EMP1767,Grace,Garcia,,Sales-New York,inactive,2023-01-02,76642.49,grace.garcia@example.com,4960335825,poor,TRUE,Sales,New York,Age is required; Invalid Age
+EMP1768,Frank,Brown,,DevOps-New York,active,11/14/2024,60122.52,frank.brown@example.com,8627036923,excellent,TRUE,DevOps,New York,Age is required; Invalid Age; Invalid Join_Date
+EMP1769,Alice,Smith,40,HR-California,pending,4/23/2024,117267.63,alice.smith@example.com,9269326572,good,FALSE,HR,California,Invalid Join_Date
+EMP1770,Charlie,Jones,25,Admin-New York,active,6/29/2023,N/A,charlie.jones@example.com,2759980110,excellent,TRUE,Admin,New York,Invalid Salary; Invalid Join_Date
+EMP1772,Heidi,Smith,40,Finance-Florida,active,5/16/2023,92007.15,heidi.smith@example.com,4159597751,average,TRUE,Finance,Florida,Invalid Join_Date
+EMP1773,Eva,Brown,,DevOps-Illinois,active,2020-10-04,62938.8,eva.brown@example.com,4418222617,average,FALSE,DevOps,Illinois,Age is required; Invalid Age
+EMP1774,Frank,Johnson,25,Admin-Texas,pending,3/29/2023,108661.01,frank.johnson@example.com,9628874311,poor,FALSE,Admin,Texas,Invalid Join_Date
+EMP1775,Bob,Jones,25,Cloud Tech-Florida,active,11/26/2020,97046.33,bob.jones@example.com,7102676719,good,FALSE,Cloud Tech,Florida,Invalid Join_Date
+EMP1776,Charlie,Smith,40,DevOps-Illinois,inactive,3/14/2020,56518.84,charlie.smith@example.com,9579927078,average,FALSE,DevOps,Illinois,Invalid Join_Date
+EMP1779,Bob,Williams,,DevOps-Nevada,pending,6/28/2020,83856.41,bob.williams@example.com,9962543847,excellent,FALSE,DevOps,Nevada,Age is required; Invalid Age; Invalid Join_Date
+EMP1781,Charlie,Williams,,Sales-Florida,pending,2024-02-02,94230.03,charlie.williams@example.com,5047158028,excellent,TRUE,Sales,Florida,Age is required; Invalid Age
+EMP1782,Charlie,Garcia,,Admin-Nevada,inactive,1/31/2021,50110.66,charlie.garcia@example.com,904637659,average,TRUE,Admin,Nevada,Age is required; Invalid Age; Invalid Join_Date
+EMP1784,David,Johnson,25,DevOps-New York,pending,7/30/2021,67809.23,david.johnson@example.com,4837441714,excellent,FALSE,DevOps,New York,Invalid Join_Date
+EMP1785,Eva,Smith,,Sales-California,active,8/21/2020,98008.51,eva.smith@example.com,8102131250,average,FALSE,Sales,California,Age is required; Invalid Age; Invalid Join_Date
+EMP1789,Frank,Davis,,Sales-Texas,active,3/28/2023,97984.53,frank.davis@example.com,6583737926,good,TRUE,Sales,Texas,Age is required; Invalid Age; Invalid Join_Date
+EMP1790,Frank,Miller,25,Admin-California,active,11/25/2021,118853.31,frank.miller@example.com,4907280122,good,FALSE,Admin,California,Invalid Join_Date
+EMP1791,Charlie,Garcia,,Sales-Florida,active,2023-03-05,58179.12,charlie.garcia@example.com,4289311324,excellent,FALSE,Sales,Florida,Age is required; Invalid Age
+EMP1792,Eva,Jones,35,DevOps-Texas,inactive,4/27/2022,56075.84,eva.jones@example.com,3269496842,average,TRUE,DevOps,Texas,Invalid Join_Date
+EMP1794,Alice,Smith,30,Cloud Tech-Florida,pending,2/21/2020,105931.77,alice.smith@example.com,175096169,poor,TRUE,Cloud Tech,Florida,Invalid Join_Date
+EMP1795,Charlie,Davis,30,HR-Florida,pending,11/24/2024,86653.96,charlie.davis@example.com,1595919456,average,TRUE,HR,Florida,Invalid Join_Date
+EMP1796,Charlie,Jones,25,Sales-Nevada,active,2/24/2021,100719.94,charlie.jones@example.com,5757475832,good,FALSE,Sales,Nevada,Invalid Join_Date
+EMP1800,Heidi,Smith,25,HR-New York,active,7/14/2021,58012.23,heidi.smith@example.com,1067245306,average,TRUE,HR,New York,Invalid Join_Date
+EMP1801,Bob,Miller,30,Sales-California,pending,10/14/2021,68973.65,bob.miller@example.com,6248433796,average,TRUE,Sales,California,Invalid Join_Date
+EMP1802,Eva,Smith,,Admin-New York,active,9/29/2021,92928.4,eva.smith@example.com,6627051156,poor,TRUE,Admin,New York,Age is required; Invalid Age; Invalid Join_Date
+EMP1803,Heidi,Smith,25,Admin-Texas,inactive,10/15/2023,53531.92,heidi.smith@example.com,9423873669,poor,TRUE,Admin,Texas,Invalid Join_Date
+EMP1805,Heidi,Brown,,HR-California,inactive,2024-01-08,63870.3,heidi.brown@example.com,8455259709,excellent,FALSE,HR,California,Age is required; Invalid Age
+EMP1806,Bob,Garcia,40,Sales-New York,active,7/22/2024,106164.53,bob.garcia@example.com,7563353573,good,FALSE,Sales,New York,Invalid Join_Date
+EMP1807,Bob,Smith,40,HR-Nevada,pending,12/25/2023,103654.54,bob.smith@example.com,8595325938,poor,FALSE,HR,Nevada,Invalid Join_Date
+EMP1808,David,Miller,30,Sales-California,inactive,3/13/2022,62834.72,david.miller@example.com,9337970580,good,TRUE,Sales,California,Invalid Join_Date
+EMP1809,Frank,Jones,35,Finance-Florida,active,5/13/2020,83273.41,frank.jones@example.com,6295187793,excellent,FALSE,Finance,Florida,Invalid Join_Date
+EMP1810,Heidi,Williams,30,HR-California,pending,3/22/2023,58917.58,heidi.williams@example.com,1763425072,good,FALSE,HR,California,Invalid Join_Date
+EMP1812,Grace,Smith,30,Sales-New York,pending,11/21/2020,118172.42,grace.smith@example.com,7598339913,poor,TRUE,Sales,New York,Invalid Join_Date
+EMP1813,Frank,Brown,30,DevOps-Illinois,inactive,5/25/2024,118614.37,frank.brown@example.com,388436603,average,FALSE,DevOps,Illinois,Invalid Join_Date
+EMP1814,Frank,Brown,,DevOps-New York,active,9/19/2023,96872.36,frank.brown@example.com,4324006156,poor,FALSE,DevOps,New York,Age is required; Invalid Age; Invalid Join_Date
+EMP1815,Heidi,Jones,25,Sales-Illinois,inactive,10/28/2021,88856.14,heidi.jones@example.com,2768297513,good,TRUE,Sales,Illinois,Invalid Join_Date
+EMP1818,Alice,Brown,30,DevOps-New York,inactive,12/24/2022,70405.23,alice.brown@example.com,8065625903,poor,TRUE,DevOps,New York,Invalid Join_Date
+EMP1821,Grace,Brown,30,HR-Texas,inactive,1/29/2023,N/A,grace.brown@example.com,1651768085,good,FALSE,HR,Texas,Invalid Salary; Invalid Join_Date
+EMP1823,Frank,Davis,40,Finance-Florida,inactive,1/21/2023,64785.13,frank.davis@example.com,3080037002,average,TRUE,Finance,Florida,Invalid Join_Date
+EMP1824,Charlie,Garcia,30,Sales-Florida,inactive,9/16/2024,79206.48,charlie.garcia@example.com,3228556607,good,FALSE,Sales,Florida,Invalid Join_Date
+EMP1827,Grace,Johnson,,Admin-Florida,pending,5/18/2022,88643.5,grace.johnson@example.com,2632809447,poor,FALSE,Admin,Florida,Age is required; Invalid Age; Invalid Join_Date
+EMP1828,Frank,Davis,30,Admin-Florida,pending,1/16/2020,90455.7,frank.davis@example.com,5862394534,excellent,FALSE,Admin,Florida,Invalid Join_Date
+EMP1829,David,Garcia,,HR-Florida,pending,3/26/2023,75687.9,david.garcia@example.com,4614707985,good,TRUE,HR,Florida,Age is required; Invalid Age; Invalid Join_Date
+EMP1830,Heidi,Jones,35,Cloud Tech-Illinois,inactive,11/15/2023,55604.42,heidi.jones@example.com,3210613393,average,FALSE,Cloud Tech,Illinois,Invalid Join_Date
+EMP1831,Eva,Jones,40,Sales-Texas,pending,12/27/2024,92704.94,eva.jones@example.com,3945703942,excellent,FALSE,Sales,Texas,Invalid Join_Date
+EMP1832,Bob,Williams,,Sales-California,pending,4/18/2020,113250.97,bob.williams@example.com,8040325375,good,TRUE,Sales,California,Age is required; Invalid Age; Invalid Join_Date
+EMP1833,Alice,Brown,40,Finance-Illinois,inactive,3/21/2023,101367.02,alice.brown@example.com,5769277893,excellent,FALSE,Finance,Illinois,Invalid Join_Date
+EMP1836,Eva,Williams,,Cloud Tech-California,inactive,6/17/2020,58877.49,eva.williams@example.com,3651460400,excellent,FALSE,Cloud Tech,California,Age is required; Invalid Age; Invalid Join_Date
+EMP1837,Eva,Jones,35,Admin-Illinois,inactive,7/17/2021,N/A,eva.jones@example.com,4247310719,excellent,FALSE,Admin,Illinois,Invalid Salary; Invalid Join_Date
+EMP1838,Bob,Brown,,Admin-Illinois,pending,2020-05-11,96140.89,bob.brown@example.com,1137984408,average,TRUE,Admin,Illinois,Age is required; Invalid Age
+EMP1841,Grace,Garcia,30,DevOps-Florida,pending,7/29/2023,61709.83,grace.garcia@example.com,7340433699,good,TRUE,DevOps,Florida,Invalid Join_Date
+EMP1842,Frank,Smith,25,DevOps-California,active,4/17/2020,61732.03,frank.smith@example.com,9687304518,average,TRUE,DevOps,California,Invalid Join_Date
+EMP1843,Eva,Davis,40,DevOps-Illinois,active,2/16/2022,97845.7,eva.davis@example.com,5778255881,good,TRUE,DevOps,Illinois,Invalid Join_Date
+EMP1844,Eva,Jones,30,Sales-Florida,active,8/14/2021,114905.58,eva.jones@example.com,5562965753,poor,FALSE,Sales,Florida,Invalid Join_Date
+EMP1845,Frank,Jones,,DevOps-Texas,active,12/24/2022,94619.69,frank.jones@example.com,2786561941,good,TRUE,DevOps,Texas,Age is required; Invalid Age; Invalid Join_Date
+EMP1846,Grace,Johnson,,DevOps-California,inactive,2021-07-07,68696.15,grace.johnson@example.com,5577820581,good,FALSE,DevOps,California,Age is required; Invalid Age
+EMP1851,David,Johnson,,DevOps-Texas,pending,2020-02-09,56047.05,david.johnson@example.com,817214363,excellent,TRUE,DevOps,Texas,Age is required; Invalid Age
+EMP1852,Grace,Jones,,Admin-Texas,pending,2021-12-01,67733.5,grace.jones@example.com,3813000412,average,FALSE,Admin,Texas,Age is required; Invalid Age
+EMP1853,Bob,Williams,40,HR-Florida,pending,9/29/2023,103891.64,bob.williams@example.com,2114716559,good,TRUE,HR,Florida,Invalid Join_Date
+EMP1855,Eva,Jones,30,Finance-Texas,inactive,2/14/2021,92721.13,eva.jones@example.com,7990707549,poor,TRUE,Finance,Texas,Invalid Join_Date
+EMP1856,Heidi,Williams,25,Admin-Illinois,inactive,3/23/2021,92977.64,heidi.williams@example.com,4768169956,excellent,FALSE,Admin,Illinois,Invalid Join_Date
+EMP1857,Heidi,Williams,35,Cloud Tech-Texas,active,5/24/2020,89994.12,heidi.williams@example.com,607174810,good,TRUE,Cloud Tech,Texas,Invalid Join_Date
+EMP1860,Heidi,Brown,40,Finance-Florida,pending,5/18/2024,106859.3,heidi.brown@example.com,871827495,good,FALSE,Finance,Florida,Invalid Join_Date
+EMP1862,Frank,Johnson,35,DevOps-California,inactive,4/23/2020,94259.08,frank.johnson@example.com,2049561212,excellent,TRUE,DevOps,California,Invalid Join_Date
+EMP1863,Bob,Johnson,35,Sales-California,active,9/18/2024,82174.75,bob.johnson@example.com,7730626041,excellent,FALSE,Sales,California,Invalid Join_Date
+EMP1864,David,Brown,30,Sales-Texas,inactive,9/15/2023,63370.22,david.brown@example.com,3597371121,excellent,FALSE,Sales,Texas,Invalid Join_Date
+EMP1865,Bob,Smith,35,Finance-Texas,pending,6/15/2022,101472.69,bob.smith@example.com,2990775607,good,TRUE,Finance,Texas,Invalid Join_Date
+EMP1866,David,Jones,25,DevOps-Illinois,active,9/28/2022,77213.73,david.jones@example.com,5816704685,good,FALSE,DevOps,Illinois,Invalid Join_Date
+EMP1867,Eva,Miller,40,Sales-Florida,active,3/16/2020,73749.96,eva.miller@example.com,1114576831,poor,TRUE,Sales,Florida,Invalid Join_Date
+EMP1868,Alice,Davis,40,Cloud Tech-New York,pending,9/28/2023,86618.37,alice.davis@example.com,1021923784,average,FALSE,Cloud Tech,New York,Invalid Join_Date
+EMP1869,Charlie,Miller,,Admin-Texas,active,2/15/2024,59911.33,charlie.miller@example.com,8471296179,excellent,TRUE,Admin,Texas,Age is required; Invalid Age; Invalid Join_Date
+EMP1870,Heidi,Jones,,Cloud Tech-New York,pending,8/21/2023,59137.64,heidi.jones@example.com,3324260507,good,FALSE,Cloud Tech,New York,Age is required; Invalid Age; Invalid Join_Date
+EMP1871,Alice,Garcia,35,Cloud Tech-Florida,pending,12/15/2020,108474.65,alice.garcia@example.com,184980424,good,TRUE,Cloud Tech,Florida,Invalid Join_Date
+EMP1872,Bob,Johnson,25,Finance-Illinois,pending,3/27/2021,54417.71,bob.johnson@example.com,3733777311,excellent,FALSE,Finance,Illinois,Invalid Join_Date
+EMP1873,Frank,Smith,40,HR-Texas,pending,3/25/2023,88211.94,frank.smith@example.com,6881228216,average,FALSE,HR,Texas,Invalid Join_Date
+EMP1876,Alice,Johnson,30,Cloud Tech-Nevada,pending,2022-09-02,N/A,alice.johnson@example.com,9327986238,good,TRUE,Cloud Tech,Nevada,Invalid Salary
+EMP1878,Eva,Jones,40,DevOps-Florida,pending,9/16/2020,64431.22,eva.jones@example.com,1205464753,poor,FALSE,DevOps,Florida,Invalid Join_Date
+EMP1879,Heidi,Jones,40,Admin-New York,pending,11/17/2023,52633.48,heidi.jones@example.com,8954787697,good,FALSE,Admin,New York,Invalid Join_Date
+EMP1880,Heidi,Jones,,Cloud Tech-Nevada,inactive,12/13/2021,79315.01,heidi.jones@example.com,9992751757,poor,TRUE,Cloud Tech,Nevada,Age is required; Invalid Age; Invalid Join_Date
+EMP1882,David,Williams,40,DevOps-Nevada,active,7/20/2021,53714.83,david.williams@example.com,5539354357,excellent,TRUE,DevOps,Nevada,Invalid Join_Date
+EMP1884,Frank,Garcia,35,Admin-Florida,inactive,11/15/2021,93177.35,frank.garcia@example.com,5885379820,average,FALSE,Admin,Florida,Invalid Join_Date
+EMP1886,Heidi,Smith,,Cloud Tech-Texas,active,1/17/2024,81137.46,heidi.smith@example.com,7497852490,excellent,FALSE,Cloud Tech,Texas,Age is required; Invalid Age; Invalid Join_Date
+EMP1887,Grace,Miller,30,DevOps-Nevada,inactive,4/16/2021,104528.27,grace.miller@example.com,4168601346,excellent,FALSE,DevOps,Nevada,Invalid Join_Date
+EMP1891,Charlie,Davis,25,DevOps-Illinois,active,7/28/2021,59555.1,charlie.davis@example.com,4216309000,good,TRUE,DevOps,Illinois,Invalid Join_Date
+EMP1892,Heidi,Smith,40,Admin-California,active,12/20/2024,70661.31,heidi.smith@example.com,5944633398,good,TRUE,Admin,California,Invalid Join_Date
+EMP1893,Charlie,Jones,,Sales-New York,active,4/23/2022,109988.16,charlie.jones@example.com,9485320894,good,TRUE,Sales,New York,Age is required; Invalid Age; Invalid Join_Date
+EMP1894,David,Brown,,Finance-Florida,inactive,1/30/2020,101101.24,david.brown@example.com,3263890218,poor,TRUE,Finance,Florida,Age is required; Invalid Age; Invalid Join_Date
+EMP1895,David,Brown,30,HR-Florida,pending,3/31/2021,112427.58,david.brown@example.com,9471136336,good,TRUE,HR,Florida,Invalid Join_Date
+EMP1896,Charlie,Miller,,Cloud Tech-Florida,active,3/23/2020,119389.15,charlie.miller@example.com,9223410345,poor,FALSE,Cloud Tech,Florida,Age is required; Invalid Age; Invalid Join_Date
+EMP1897,Alice,Brown,40,Sales-Florida,inactive,7/16/2024,105861.23,alice.brown@example.com,9967331166,good,TRUE,Sales,Florida,Invalid Join_Date
+EMP1898,Heidi,Davis,40,Admin-Texas,pending,3/22/2024,50869.61,heidi.davis@example.com,7269608436,average,TRUE,Admin,Texas,Invalid Join_Date
+EMP1899,David,Williams,30,HR-California,active,8/19/2023,N/A,david.williams@example.com,6855078966,excellent,TRUE,HR,California,Invalid Salary; Invalid Join_Date
+EMP1902,Alice,Miller,25,Finance-Nevada,inactive,12/23/2022,52289.99,alice.miller@example.com,7093170694,poor,TRUE,Finance,Nevada,Invalid Join_Date
+EMP1903,Eva,Davis,,Sales-Illinois,active,2024-01-06,97926.56,eva.davis@example.com,5607676163,average,TRUE,Sales,Illinois,Age is required; Invalid Age
+EMP1904,Frank,Williams,25,Sales-Nevada,inactive,12/23/2024,53609.38,frank.williams@example.com,5345472238,good,FALSE,Sales,Nevada,Invalid Join_Date
+EMP1905,Heidi,Johnson,,Cloud Tech-California,inactive,12/24/2020,95372.09,heidi.johnson@example.com,8983065030,excellent,FALSE,Cloud Tech,California,Age is required; Invalid Age; Invalid Join_Date
+EMP1906,David,Johnson,30,HR-New York,pending,8/20/2020,95432.69,david.johnson@example.com,2198041846,excellent,TRUE,HR,New York,Invalid Join_Date
+EMP1907,David,Williams,30,HR-California,inactive,10/28/2022,97615.87,david.williams@example.com,2426423641,average,FALSE,HR,California,Invalid Join_Date
+EMP1908,Bob,Davis,35,HR-Florida,inactive,10/23/2022,86867.78,bob.davis@example.com,8131909247,poor,FALSE,HR,Florida,Invalid Join_Date
+EMP1909,Eva,Miller,40,Sales-California,pending,11/20/2023,106615.71,eva.miller@example.com,7623039110,average,FALSE,Sales,California,Invalid Join_Date
+EMP1911,Bob,Jones,25,Admin-California,active,11/28/2023,60356.78,bob.jones@example.com,2305248087,poor,TRUE,Admin,California,Invalid Join_Date
+EMP1912,David,Jones,,DevOps-Texas,inactive,2022-03-05,117870.22,david.jones@example.com,622072238,excellent,FALSE,DevOps,Texas,Age is required; Invalid Age
+EMP1913,Charlie,Johnson,40,HR-Florida,inactive,2/19/2024,95127.91,charlie.johnson@example.com,5947372131,average,FALSE,HR,Florida,Invalid Join_Date
+EMP1914,Bob,Brown,25,Admin-Illinois,pending,11/18/2021,78818.42,bob.brown@example.com,9016204786,average,FALSE,Admin,Illinois,Invalid Join_Date
+EMP1915,Frank,Miller,40,Sales-Nevada,pending,12/21/2022,108933.55,frank.miller@example.com,6886878598,poor,TRUE,Sales,Nevada,Invalid Join_Date
+EMP1916,Eva,Johnson,,Admin-California,active,2024-04-06,68200.52,eva.johnson@example.com,6486287202,average,TRUE,Admin,California,Age is required; Invalid Age
+EMP1917,Eva,Brown,25,Admin-California,inactive,7/22/2022,116934.97,eva.brown@example.com,1954196663,good,TRUE,Admin,California,Invalid Join_Date
+EMP1918,Charlie,Brown,,HR-New York,active,9/14/2024,99567.78,charlie.brown@example.com,5057303626,good,TRUE,HR,New York,Age is required; Invalid Age; Invalid Join_Date
+EMP1921,Charlie,Davis,35,Finance-Illinois,active,12/28/2022,71109.18,charlie.davis@example.com,3214505765,poor,TRUE,Finance,Illinois,Invalid Join_Date
+EMP1922,Grace,Smith,40,Admin-Florida,inactive,11/15/2020,50300.6,grace.smith@example.com,1945887070,good,FALSE,Admin,Florida,Invalid Join_Date
+EMP1923,Frank,Davis,35,Finance-California,pending,9/27/2023,60295.84,frank.davis@example.com,5534820127,good,FALSE,Finance,California,Invalid Join_Date
+EMP1925,Bob,Williams,35,Cloud Tech-Florida,pending,9/18/2024,65425.54,bob.williams@example.com,5975954507,poor,TRUE,Cloud Tech,Florida,Invalid Join_Date
+EMP1928,Bob,Miller,,Finance-New York,inactive,2021-12-10,92222.03,bob.miller@example.com,9646300401,poor,TRUE,Finance,New York,Age is required; Invalid Age
+EMP1929,Alice,Smith,35,Finance-New York,pending,10/14/2024,79934.83,alice.smith@example.com,3693626893,average,TRUE,Finance,New York,Invalid Join_Date
+EMP1932,Grace,Smith,30,Sales-Illinois,active,10/21/2020,64544.87,grace.smith@example.com,9885582983,average,TRUE,Sales,Illinois,Invalid Join_Date
+EMP1933,Frank,Smith,25,Sales-Florida,active,1/14/2020,78662.24,frank.smith@example.com,9330674583,poor,TRUE,Sales,Florida,Invalid Join_Date
+EMP1935,Charlie,Smith,40,HR-Illinois,inactive,3/27/2020,107595.95,charlie.smith@example.com,3372188565,excellent,TRUE,HR,Illinois,Invalid Join_Date
+EMP1936,Eva,Miller,40,Sales-Nevada,inactive,2021-04-04,N/A,eva.miller@example.com,6954132970,good,FALSE,Sales,Nevada,Invalid Salary
+EMP1938,Grace,Miller,30,Finance-Nevada,pending,5/16/2021,51990.98,grace.miller@example.com,5143776935,excellent,TRUE,Finance,Nevada,Invalid Join_Date
+EMP1940,Eva,Brown,40,DevOps-Texas,inactive,11/15/2022,N/A,eva.brown@example.com,9611110285,good,TRUE,DevOps,Texas,Invalid Salary; Invalid Join_Date
+EMP1941,Eva,Jones,30,Sales-Texas,active,10/16/2021,82273.08,eva.jones@example.com,7120072023,excellent,FALSE,Sales,Texas,Invalid Join_Date
+EMP1944,Charlie,Jones,25,Sales-New York,pending,10/22/2021,111071.02,charlie.jones@example.com,4949819420,excellent,FALSE,Sales,New York,Invalid Join_Date
+EMP1947,Charlie,Garcia,25,Admin-New York,pending,3/28/2021,108210.15,charlie.garcia@example.com,6634533721,poor,TRUE,Admin,New York,Invalid Join_Date
+EMP1948,Bob,Miller,40,Finance-Texas,active,2024-03-08,N/A,bob.miller@example.com,109121721,excellent,TRUE,Finance,Texas,Invalid Salary
+EMP1949,Frank,Jones,35,DevOps-California,active,7/31/2024,80935.65,frank.jones@example.com,1455937660,excellent,FALSE,DevOps,California,Invalid Join_Date
+EMP1951,Charlie,Brown,30,HR-New York,active,9/23/2020,118677.67,charlie.brown@example.com,5100462775,excellent,FALSE,HR,New York,Invalid Join_Date
+EMP1952,Bob,Jones,25,Cloud Tech-Florida,inactive,3/28/2020,63744.57,bob.jones@example.com,5725659201,average,FALSE,Cloud Tech,Florida,Invalid Join_Date
+EMP1953,Alice,Brown,40,Cloud Tech-California,active,5/15/2020,N/A,alice.brown@example.com,4617520237,poor,FALSE,Cloud Tech,California,Invalid Salary; Invalid Join_Date
+EMP1954,Bob,Williams,25,Sales-New York,pending,2/13/2021,62934.73,bob.williams@example.com,9743260054,good,FALSE,Sales,New York,Invalid Join_Date
+EMP1955,Bob,Williams,30,DevOps-California,pending,12/13/2021,74654.23,bob.williams@example.com,9550178331,excellent,TRUE,DevOps,California,Invalid Join_Date
+EMP1956,David,Brown,,Sales-Texas,active,2024-05-08,N/A,david.brown@example.com,5848689992,average,TRUE,Sales,Texas,Age is required; Invalid Age; Invalid Salary
+EMP1958,David,Johnson,,DevOps-Florida,inactive,11/30/2023,91256.64,david.johnson@example.com,5069176798,average,FALSE,DevOps,Florida,Age is required; Invalid Age; Invalid Join_Date
+EMP1959,Bob,Davis,30,HR-Florida,inactive,3/14/2021,85997.57,bob.davis@example.com,3593744038,good,FALSE,HR,Florida,Invalid Join_Date
+EMP1961,Eva,Smith,,DevOps-Texas,active,2021-02-11,84559.9,eva.smith@example.com,6060148859,poor,FALSE,DevOps,Texas,Age is required; Invalid Age
+EMP1962,Heidi,Miller,,DevOps-California,pending,9/18/2024,81076.91,heidi.miller@example.com,8490793883,poor,FALSE,DevOps,California,Age is required; Invalid Age; Invalid Join_Date
+EMP1963,Eva,Davis,40,Admin-Texas,inactive,10/22/2023,N/A,eva.davis@example.com,1368528305,average,FALSE,Admin,Texas,Invalid Salary; Invalid Join_Date
+EMP1965,Grace,Smith,40,DevOps-Illinois,active,2/27/2024,114770.32,grace.smith@example.com,4626325143,good,TRUE,DevOps,Illinois,Invalid Join_Date
+EMP1967,David,Miller,40,DevOps-Florida,inactive,4/15/2024,99944.57,david.miller@example.com,2175188780,poor,TRUE,DevOps,Florida,Invalid Join_Date
+EMP1968,Eva,Miller,40,HR-Florida,pending,5/20/2023,116509.72,eva.miller@example.com,7941515262,average,FALSE,HR,Florida,Invalid Join_Date
+EMP1969,Eva,Williams,30,Finance-Texas,active,5/28/2021,84253.9,eva.williams@example.com,8409112251,excellent,TRUE,Finance,Texas,Invalid Join_Date
+EMP1970,Charlie,Garcia,25,Cloud Tech-Nevada,active,8/27/2024,54776.01,charlie.garcia@example.com,8837505660,poor,FALSE,Cloud Tech,Nevada,Invalid Join_Date
+EMP1972,Bob,Smith,,Finance-Florida,active,8/24/2021,96346.53,bob.smith@example.com,7876553006,average,TRUE,Finance,Florida,Age is required; Invalid Age; Invalid Join_Date
+EMP1973,Eva,Williams,,HR-Illinois,pending,2020-06-02,116680.63,eva.williams@example.com,3095055604,excellent,TRUE,HR,Illinois,Age is required; Invalid Age
+EMP1975,Alice,Johnson,30,Sales-Nevada,inactive,12/16/2024,99424.14,alice.johnson@example.com,7788519052,excellent,FALSE,Sales,Nevada,Invalid Join_Date
+EMP1976,Charlie,Garcia,35,DevOps-Florida,inactive,4/13/2024,57656.74,charlie.garcia@example.com,4864010423,good,TRUE,DevOps,Florida,Invalid Join_Date
+EMP1977,Heidi,Garcia,40,Sales-New York,pending,4/24/2020,77396.94,heidi.garcia@example.com,6245618516,excellent,TRUE,Sales,New York,Invalid Join_Date
+EMP1978,Grace,Garcia,,DevOps-California,inactive,10/18/2021,54299.68,grace.garcia@example.com,4460045211,average,FALSE,DevOps,California,Age is required; Invalid Age; Invalid Join_Date
+EMP1979,Charlie,Miller,35,HR-Nevada,pending,2/25/2020,103563.58,charlie.miller@example.com,8991511454,excellent,TRUE,HR,Nevada,Invalid Join_Date
+EMP1980,Grace,Brown,25,Finance-California,inactive,4/23/2022,74588.85,grace.brown@example.com,1293913043,average,FALSE,Finance,California,Invalid Join_Date
+EMP1981,David,Garcia,30,DevOps-California,pending,6/22/2020,113727.23,david.garcia@example.com,8818984840,poor,FALSE,DevOps,California,Invalid Join_Date
+EMP1983,Grace,Jones,,Sales-Florida,inactive,2020-11-02,98717.09,grace.jones@example.com,1901707567,poor,FALSE,Sales,Florida,Age is required; Invalid Age
+EMP1984,Frank,Garcia,40,Sales-Florida,inactive,3/18/2023,56840.8,frank.garcia@example.com,1429831521,poor,TRUE,Sales,Florida,Invalid Join_Date
+EMP1985,David,Johnson,35,Finance-Illinois,pending,11/26/2021,61663.91,david.johnson@example.com,9107322835,average,TRUE,Finance,Illinois,Invalid Join_Date
+EMP1986,Grace,Brown,30,Finance-Nevada,active,9/17/2024,109523.4,grace.brown@example.com,849378305,poor,TRUE,Finance,Nevada,Invalid Join_Date
+EMP1988,Bob,Johnson,,Cloud Tech-Illinois,inactive,7/13/2021,54708.88,bob.johnson@example.com,6944391648,excellent,TRUE,Cloud Tech,Illinois,Age is required; Invalid Age; Invalid Join_Date
+EMP1989,Heidi,Garcia,40,Admin-California,active,8/27/2023,107661.73,heidi.garcia@example.com,7016934291,excellent,TRUE,Admin,California,Invalid Join_Date
+EMP1990,Eva,Johnson,40,DevOps-Illinois,inactive,2/13/2021,79002.0,eva.johnson@example.com,9132033015,average,TRUE,DevOps,Illinois,Invalid Join_Date
+EMP1991,Heidi,Brown,,Admin-Texas,pending,2023-11-12,86135.69,heidi.brown@example.com,2341903105,excellent,FALSE,Admin,Texas,Age is required; Invalid Age
+EMP1993,Grace,Brown,,DevOps-Nevada,active,2022-05-12,64045.36,grace.brown@example.com,6847323652,poor,TRUE,DevOps,Nevada,Age is required; Invalid Age
+EMP1994,David,Brown,30,DevOps-Nevada,inactive,9/24/2024,80477.21,david.brown@example.com,3774604066,good,FALSE,DevOps,Nevada,Invalid Join_Date
+EMP1995,Bob,Jones,30,Finance-California,inactive,8/16/2023,61240.9,bob.jones@example.com,2007843613,poor,TRUE,Finance,California,Invalid Join_Date
+EMP1996,David,Smith,40,Admin-Texas,active,1/28/2021,51939.29,david.smith@example.com,2442607818,excellent,TRUE,Admin,Texas,Invalid Join_Date
+EMP1997,Eva,Brown,40,Finance-Illinois,inactive,5/14/2022,95284.54,eva.brown@example.com,7543734763,good,FALSE,Finance,Illinois,Invalid Join_Date
+EMP1999,Charlie,Williams,25,DevOps-Florida,active,4/23/2020,110170.88,charlie.williams@example.com,8821458413,poor,TRUE,DevOps,Florida,Invalid Join_Date
+EMP2001,Eva,Davis,30,DevOps-Illinois,inactive,4/18/2020,82547.26,eva.davis@example.com,3899827801,average,FALSE,DevOps,Illinois,Invalid Join_Date
+EMP2002,Bob,Smith,35,Finance-Illinois,pending,6/29/2020,63049.22,bob.smith@example.com,586950731,good,TRUE,Finance,Illinois,Invalid Join_Date
+EMP2003,Frank,Smith,35,HR-California,pending,2/15/2023,115229.12,frank.smith@example.com,1464493698,excellent,TRUE,HR,California,Invalid Join_Date
+EMP2004,Grace,Smith,25,DevOps-Illinois,pending,6/15/2023,60687.63,grace.smith@example.com,9516793349,excellent,FALSE,DevOps,Illinois,Invalid Join_Date
+EMP2005,Frank,Jones,30,Finance-Illinois,inactive,3/19/2022,67492.73,frank.jones@example.com,5573857367,good,TRUE,Finance,Illinois,Invalid Join_Date
+EMP2006,Grace,Brown,,HR-Illinois,inactive,10/25/2023,77821.79,grace.brown@example.com,119236036,average,FALSE,HR,Illinois,Age is required; Invalid Age; Invalid Join_Date
+EMP2007,Charlie,Jones,35,DevOps-Texas,active,7/14/2022,69146.95,charlie.jones@example.com,6811872332,poor,FALSE,DevOps,Texas,Invalid Join_Date
+EMP2009,David,Garcia,,Finance-Illinois,pending,2024-11-06,62603.98,david.garcia@example.com,7315391148,poor,FALSE,Finance,Illinois,Age is required; Invalid Age
+EMP2011,David,Jones,40,Admin-California,inactive,9/21/2022,52031.74,david.jones@example.com,6511893939,excellent,TRUE,Admin,California,Invalid Join_Date
+EMP2012,Grace,Miller,35,DevOps-Florida,inactive,4/15/2023,N/A,grace.miller@example.com,6557820189,average,FALSE,DevOps,Florida,Invalid Salary; Invalid Join_Date
+EMP2013,Eva,Williams,,HR-Illinois,pending,2020-06-02,116680.63,eva.williams@example.com,4322302332,good,FALSE,HR,Illinois,Age is required; Invalid Age
+EMP2014,Grace,Jones,30,Finance-Nevada,pending,5/16/2021,51990.98,grace.jones@example.com,2470739200,excellent,TRUE,Finance,Nevada,Invalid Join_Date
+EMP2015,David,Miller,30,HR-California,active,8/19/2023,N/A,david.miller@example.com,3546212759,good,TRUE,HR,California,Invalid Salary; Invalid Join_Date
+EMP2018,Alice,Garcia,30,HR-Florida,inactive,12/16/2024,71318.79,alice.garcia@example.com,8995729892,good,TRUE,HR,Florida,Invalid Join_Date
+EMP2019,Heidi,Jones,30,DevOps-Illinois,pending,2/22/2021,77764.24,heidi.jones@example.com,7629745492,average,FALSE,DevOps,Illinois,Invalid Join_Date

@@ -1,0 +1,13 @@
+order_id,customer_name,city,age,signup_date,order_amount,payment_method,notes
+5001,  ravi kumar,Mumbai,29,2023-01-15,1499.00,UPI,
+5002,Sneha Reddy ,Hyderabad,,2023-02-20,899.50,Card,First order
+5003,ravi kumar,Mumbai,29,2023-01-15,1499.00,UPI,
+5004,Ankit Verma,Delhi,thirty-five,2023-03-01,,Cash,
+5005,priya singh,Bangalore,24,2023-03-15,2500.00,card,Repeat customer
+5006,,Chennai,31,2023-04-02,150.00,UPI,Gift order
+5007,Ankit Verma,delhi,35,2023-03-01,3200.00,Cash,
+5008,Vikram Rao,Mumbai,-5,2023-05-10,999.00,UPI,
+5009,Sneha  Reddy,Hyderabad,27,2023-02-20,899.50,card,First order
+5010,Meena Iyer,Kolkata,42,not_available,499.00,Debit,
+5011,Rohit Shah,Bangalore,150,2023-06-01,1799.00,UPI,Suspicious age
+5012,Divya Nair,Pune,26,2023-06-15,-450.00,Card,Refund case
