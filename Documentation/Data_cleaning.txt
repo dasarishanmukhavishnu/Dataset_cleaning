@@ -1,174 +1,433 @@
+# Employee Data Engineering Project Documentation
 
-Day 1 – Data Inspection Workflow
+# Day 1 – Data Inspection & Exploratory Analysis
 
-Step 1: Load the Dataset
+## Objective
 
-Objective: Read the dataset and create a working copy.
+Inspect the raw dataset to understand its structure, identify data quality issues, and define the cleaning strategy before performing any transformations.
 
-	Load CSV into a DataFrame.
-	Keep the raw data unchanged by creating a copy.
+---
 
-Step 2: Preview the Dataset
+## Step 1 – Load the Dataset
 
-Objective: Understand the structure.
+### Objective
 
-Commands:
+Read the raw CSV file into a Pandas DataFrame while preserving the original dataset.
 
-	head()
-	tail() (optional)
-	sample() (optional)
+### Tasks Performed
 
-Questions:
+* Loaded the CSV file using Pandas.
+* Created a working copy of the dataset.
+* Preserved the raw dataset for reproducibility.
 
-	What does each column represent?
-	Are there obvious errors?
+---
 
-Step 3: Inspect Dataset Structure
+## Step 2 – Preview the Dataset
 
-Objective: Understand metadata.
+### Objective
 
-Commands:
+Gain a quick understanding of the dataset structure and identify obvious issues.
 
-	info()
-	shape
-	columns
+### Commands Used
 
-Check:
+* `head()`
+* `tail()`
+* `sample()`
 
-	Number of rows
-	Number of columns
-	Data types
-	Memory usage
+### Questions Asked
 
-Your observations:
+* What does each column represent?
+* Are there missing values?
+* Are there formatting issues?
+* Are there obvious anomalies?
 
-	1020 rows
-	12 columns
-	Join_Date stored as string
-	Age and Salary are float
-	Remote_Work is boolean
+---
 
-Step 4: Check Missing Values
+## Step 3 – Inspect Dataset Structure
 
-Objective: Measure data completeness.
+### Objective
 
-Commands:
+Understand the dataset metadata.
 
-	isnull().sum()
-	Missing percentage
+### Commands Used
 
-Your observations:
+* `info()`
+* `shape`
+* `columns`
 
-	Age → 20.69% missing
-	Salary → 2.35% missing
-	Remaining columns → No missing values
+### Inspection Results
 
-Step 5: Check Primary Key Integrity
+* Total Rows: **1020**
+* Total Columns: **12**
+* `Join_Date` stored as string
+* `Age` stored as float
+* `Salary` stored as float
+* `Remote_Work` stored as Boolean
 
-Objective: Ensure every employee is uniquely identified.
+---
 
-Checks:
+## Step 4 – Missing Value Analysis
 
-	Null values in Employee_ID
-	Duplicate Employee_ID
+### Objective
 
-Your observations:
+Measure data completeness.
 
-	No null IDs
-	No duplicate IDs
-	Employee_ID can be treated as the primary key
-	
-Step 6: Check Duplicate Records
+### Commands Used
 
-Objective: Find repeated data.
+* `isnull().sum()`
+* Missing value percentage calculation
 
-Commands:
+### Findings
 
-	duplicated()
+| Column            | Missing           |
+| ----------------- | ----------------- |
+| Age               | 20.69%            |
+| Salary            | 2.35%             |
+| Remaining Columns | No Missing Values |
 
-Your observations:
+---
 
-	No completely duplicated rows
+## Step 5 – Primary Key Validation
 
-Step 7: Investigate Name Duplicates
+### Objective
 
-Objective: Determine whether repeated names represent duplicate employees.
+Verify that every employee is uniquely identifiable.
 
-Checks:
+### Checks Performed
 
-	Duplicate First_Name + Last_Name
-	Compare emails
+* Null values in Employee_ID
+* Duplicate Employee_ID
 
-Your observations:
+### Findings
 
-	Same names appear multiple times.
-	Emails are also repeated.
-	Other attributes differ.
-	These are not exact duplicate rows.
+* No null Employee IDs
+* No duplicate Employee IDs
+* Employee_ID can safely be treated as the Primary Key.
 
-Step 8: Examine Numerical Columns
+---
 
-Objective: Understand distributions and detect anomalies.
+## Step 6 – Duplicate Record Analysis
 
-Commands:
+### Objective
 
-	describe()
+Identify completely duplicated rows.
 
-Your observations:
+### Commands Used
 
-	Mean Age = 32
-	No major salary outliers
-	Phone numbers contain negative values
+* `duplicated()`
 
-Step 9: Examine Categorical Columns
+### Findings
 
-Objective: Identify unique categories.
+* No completely duplicated records were found.
 
-Commands:
+---
 
-	unique()
-	(Later you can also use value_counts())
+## Step 7 – Duplicate Name Investigation
 
-Your observations:
+### Objective
 
-Status:
-Active
-Pending
-Inactive
+Determine whether repeated employee names represent duplicate records.
 
-Performance Score:
-Excellent
-Good
-Average
-Poor
+### Checks Performed
 
-When you inspect a dataset, ask yourself these questions every time:
+* Duplicate First_Name + Last_Name combinations
+* Email comparison
+* Attribute comparison
 
-1.Structure
-	How many rows and columns?
-	Data types?
-	Memory usage?
-2.Data Quality
-	Missing values?
-	Duplicate rows?
-	Primary key unique?
-	Invalid values?
-3.Numerical Columns
-	Outliers?
-	Negative values?
-	Impossible values?
-4.Categorical Columns
-	Unique values?
-	Unexpected categories?
-	Frequency distribution?
-5.Date Columns
-	Correct format?
-	Invalid dates?
-	Date range?
-6.Business Rules
-	Is salary positive?
-	Is age realistic?
-	Is email unique?
-	Is phone valid?
-	
-* The Date Handling format='mixed',dayfirst = 'True',format='%d/%m/%Y' or '%m/%d/%Y' format mixed then mention which format do you need strftime('%d/%m/%Y' or '%m/%d/%Y')
+### Findings
+
+* Multiple employees share identical names.
+* Email addresses are duplicated.
+* Other attributes differ.
+* These records represent different employee entries rather than exact duplicates.
+
+---
+
+## Step 8 – Numerical Data Analysis
+
+### Objective
+
+Understand numerical distributions and identify anomalies.
+
+### Commands Used
+
+* `describe()`
+
+### Findings
+
+* Mean Age ≈ 32 years
+* Salary distribution appears reasonable
+* Negative phone numbers detected
+* Phone numbers with invalid lengths identified
+
+---
+
+## Step 9 – Categorical Data Analysis
+
+### Objective
+
+Inspect categorical values for consistency.
+
+### Commands Used
+
+* `unique()`
+* `value_counts()`
+
+### Categories Identified
+
+#### Employee Status
+
+* Active
+* Pending
+* Inactive
+
+#### Performance Score
+
+* Excellent
+* Good
+* Average
+* Poor
+
+---
+
+# Data Inspection Checklist
+
+Every dataset inspection should answer the following questions.
+
+## 1. Structure
+
+* Number of rows
+* Number of columns
+* Data types
+* Memory usage
+
+## 2. Data Quality
+
+* Missing values
+* Duplicate rows
+* Primary key validation
+* Invalid records
+
+## 3. Numerical Columns
+
+* Outliers
+* Negative values
+* Impossible values
+* Statistical summary
+
+## 4. Categorical Columns
+
+* Unique values
+* Unexpected categories
+* Frequency distribution
+
+## 5. Date Columns
+
+* Date format
+* Invalid dates
+* Date range
+* Consistency
+
+## 6. Business Rules
+
+* Salary should be positive
+* Age should be realistic
+* Email uniqueness
+* Phone number validity
+* Department consistency
+
+---
+
+# Date Handling Notes
+
+Depending on the source system, dates may arrive in different formats.
+
+Examples
+
+* `%d/%m/%Y`
+* `%m/%d/%Y`
+
+Useful Pandas options
+
+```python
+pd.to_datetime(
+    column,
+    format="mixed",
+    dayfirst=True
+)
+```
+
+or
+
+```python
+pd.to_datetime(
+    column,
+    format="%d/%m/%Y"
+)
+```
+
+or
+
+```python
+pd.to_datetime(
+    column,
+    format="%m/%d/%Y"
+)
+```
+
+After conversion, standardize the output using
+
+```python
+dt.strftime("%d/%m/%Y")
+```
+
+or
+
+```python
+dt.strftime("%m/%d/%Y")
+```
+
+depending on business requirements.
+
+---
+
+# Day 2 – Data Cleaning
+
+## Objective
+
+Transform the raw dataset into a clean, analysis-ready dataset while preserving data integrity.
+
+### Cleaning Tasks Performed
+
+* Standardized column names.
+* Trimmed leading and trailing whitespace.
+* Standardized categorical values.
+* Split columns containing multiple pieces of information.
+* Converted Join_Date into a consistent date format.
+* Filled or handled missing values based on business rules.
+* Corrected invalid phone numbers.
+* Flagged invalid phone numbers using `phno_is_valid`.
+* Removed invalid formatting.
+* Verified Employee_ID integrity.
+* Exported the cleaned dataset.
+
+### Output
+
+* `Cleaned_Employee_Dataset.csv`
+
+---
+
+# Day 3 – Validation Pipeline
+
+## Objective
+
+Validate the cleaned dataset before loading it into the database.
+
+### Validation Checks
+
+* Missing values
+* Duplicate records
+* Primary key uniqueness
+* Salary validation
+* Phone number validation
+* Date validation
+* Business rule validation
+
+### Purpose
+
+The validation step ensures that only trusted, high-quality data enters the database, preventing downstream failures in analytics pipelines.
+
+---
+
+# Day 4 – MySQL Data Ingestion
+
+## Objective
+
+Load the validated dataset into MySQL using SQLAlchemy.
+
+### Pipeline
+
+Cleaned CSV
+
+↓
+
+Pandas DataFrame
+
+↓
+
+Environment Variables (.env)
+
+↓
+
+SQLAlchemy Engine
+
+↓
+
+MySQL Database
+
+↓
+
+Employees Table
+
+### Tasks Performed
+
+* Loaded database credentials from `.env`
+* Created SQLAlchemy engine
+* Defined explicit SQL schema
+* Converted Join_Date to SQL DATE datatype
+* Loaded the dataset using `to_sql()`
+* Verified successful ingestion
+
+### Database Object Created
+
+**Table**
+
+* Employees
+
+---
+
+# Day 5 – SQL Business Analytics
+
+## Objective
+
+Create reusable SQL Views for business reporting and Tableau dashboards.
+
+### Views Created
+
+* `vw_department_summary`
+* `vw_region_summary`
+* `vw_performance_score`
+* `vw_remote_summary`
+* `vw_status_summary`
+* `vw_dept_region_summary`
+* `vw_age_group_summary`
+* `vw_phno_valid_summary`
+* `vw_hr_dashboard`
+
+### Business Questions Answered
+
+1. Department-wise employee and salary analysis.
+2. Region-wise employee distribution.
+3. Performance score analysis.
+4. Remote vs Office workforce comparison.
+5. Employee status distribution.
+6. Department vs Region analysis.
+7. Age group analysis.
+8. Phone number quality analysis.
+9. Executive HR KPI dashboard.
+
+### Technologies Used
+
+* Python
+* Pandas
+* SQLAlchemy
+* MySQL
+* SQL Views
+
+---
+
+# Next Phase
+
+Tableau Dashboard Development
+
+The SQL Views created above will serve as the reporting layer for building an interactive HR Analytics Dashboard containing KPI cards, charts, filters, and business insights.
