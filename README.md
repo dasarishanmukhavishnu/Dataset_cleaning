@@ -133,7 +133,6 @@ Interactive dashboard including:
 
 # Dashboard Preview
 
-> Add a screenshot here after uploading it to the repository.
 
 ```
 Dashboard/dashboard_preview.png
@@ -218,10 +217,10 @@ Through this project I learned:
 **Dasari Shanmukha Vishnu**
 
 LinkedIn:
-(Add your LinkedIn URL)
+https://www.linkedin.com/in/shanmukha-vishnu-dasari-7860ab334/
 
 GitHub:
-(Add your GitHub Profile URL)
+https://github.com/dasarishanmukhavishnu/
 
 ---
 
