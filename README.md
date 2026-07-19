@@ -1,15 +1,14 @@
-
 # Employee Data Cleaning & Analytics Pipeline
 
-	An end-to-end Data Engineering project demonstrating data validation, cleaning, SQL business views, and Tableau dashboard development using a real-world employee dataset.
+An end-to-end Data Engineering project demonstrating data validation, cleaning, SQL business views, and Tableau dashboard development using a real-world employee dataset.
 
 ---
 
 # Project Overview
 
-	This project focuses on transforming raw employee data into business-ready datasets.
+This project focuses on transforming raw employee data into business-ready datasets.
 
-	The workflow starts with a messy employee dataset, performs data validation and cleaning using Python and Pandas, loads the cleaned data into MySQL, creates SQL business views, and finally visualizes key business insights through an interactive Tableau dashboard.
+The workflow starts with a messy employee dataset, performs data validation and cleaning using Python and Pandas, loads the cleaned data into MySQL, creates SQL business views, and finally visualizes key business insights through an interactive Tableau dashboard.
 
 ---
 
@@ -33,7 +32,7 @@
 	        ▼
 	Load into MySQL
 	        │
-	        ▼
+    		▼
 	Business SQL Views
 	        │
 	        ▼
@@ -44,95 +43,97 @@
 
 # Tech Stack
 
-	- Python
-	- Pandas
-	- NumPy
-	- MySQL
-	- SQL Views
-	- Tableau Desktop
-	- Git
-	- GitHub
-	- VS Code
-	- WSL (Ubuntu)
+- Python
+- Pandas
+- NumPy
+- MySQL
+- SQL Views
+- Tableau Desktop
+- Git
+- GitHub
+- VS Code
+- WSL (Ubuntu)
 
 ---
 
 # Project Structure
 
 ```
-	DataCleaning/
-	│
-	├── README.md
-	│
-	├── data/
-	│   ├── raw/
-	│   │   ├── Messy_Employee_dataset.csv
-	│   │   ├── messy_orders.csv
-	│   │   └── invalid_employee.csv
-	│   │
-	│   └── cleaned/
-	│       ├── Cleaned_Employee_Dataset.csv
-	│       └── valid_employee.csv
-	│
-	├── src/
-	│   ├── validation_script.py
-	│   ├── data_cleaning.py
-	│   ├── pd_data_cleaning1.py
-	│   └── load_to_mysql.py
-	│
-	├── sql/
-	│   └── create_views.sql
-	│
-	├── Dashboard/
-	│   └── Employees_Data_Analysis.twb
-	│
-	└── Documentation/
-	    └── Data_cleaning.txt
+DataCleaning/
+│
+├── README.md
+│
+├── data/
+│   ├── raw/
+│   │   ├── Messy_Employee_dataset.csv
+│   │   ├── messy_orders.csv
+│   │   └── invalid_employee.csv
+│   │
+│   └── cleaned/
+│       ├── Cleaned_Employee_Dataset.csv
+│       └── valid_employee.csv
+│
+├── src/
+│   ├── validation_script.py
+│   ├── data_cleaning.py
+│   ├── pd_data_cleaning1.py
+│   └── load_to_mysql.py
+│
+├── sql/
+│   └── create_views.sql
+│
+├── Dashboard/
+│   └── Employees_Data_Analysis.twb
+│
+└── Documentation/
+    └── Data_cleaning.txt
 ```
 
 ---
 
 # Features
 
-	✔ Data Validation
-	
-		- Duplicate detection
-		- Missing value inspection
-		- Phone number validation
-		- Salary validation
-		- Date format validation
-		
-	✔ Data Cleaning
+✔ Data Validation
 
-		- Standardized inconsistent values
-		- Removed invalid records
-		- Cleaned phone numbers
-		- Fixed inconsistent date formats
-		- Standardized categorical values
-		- Vectorized Pandas operations
+- Duplicate detection
+- Missing value inspection
+- Phone number validation
+- Salary validation
+- Date format validation
 
-	✔ SQL
+✔ Data Cleaning
 
-		- Loaded cleaned dataset into MySQL
-		- Created business-ready SQL Views
-		- Aggregated department metrics
-		- Aggregated regional insights
+- Standardized inconsistent values
+- Removed invalid records
+- Cleaned phone numbers
+- Fixed inconsistent date formats
+- Standardized categorical values
+- Vectorized Pandas operations
 
-	✔ Tableau Dashboard
+✔ SQL
 
-	Interactive dashboard including:
+- Loaded cleaned dataset into MySQL
+- Created business-ready SQL Views
+- Aggregated department metrics
+- Aggregated regional insights
 
-		- Average Salary by Department
-		- Maximum Salary by Department
-		- Workforce Distribution by Region
-		- Average Salary by Region
-		- Employee Performance Chart
-		- Interactive Department Filter
-		- Interactive Region Filter
+✔ Tableau Dashboard
+
+Interactive dashboard including:
+
+- Average Salary by Department
+- Maximum Salary by Department
+- Workforce Distribution by Region
+- Average Salary by Region
+- Employee Performance Chart
+- Interactive Department Filter
+- Interactive Region Filter
 
 ---
 
 # Dashboard Preview
+
+> Add a screenshot here after uploading it to the repository.
 
 ```
 Dashboard/dashboard_preview.png
@@ -150,39 +151,39 @@ Example:
 
 ### Average & Maximum Salary Per Department
 
-	Compares department-wise average salary against maximum salary to identify compensation trends.
+Compares department-wise average salary against maximum salary to identify compensation trends.
 
 ### Workforce Distribution
 
-	Displays employee count across different regions and departments.
+Displays employee count across different regions and departments.
 
 ### Regional Salary Analysis
 
-	Shows how average salaries vary across multiple states.
+Shows how average salaries vary across multiple states.
 
 ### Performance Chart
 
-	Provides an overall comparison of departmental salary performance.
+Provides an overall comparison of departmental salary performance.
 
 ### Interactive Filters
 
-	Users can filter dashboard results by:
+Users can filter dashboard results by:
 
-	- Department
-	- Region
+- Department
+- Region
 
 ---
 
 # SQL Views
 
-	Business views were created for reporting purposes.
+Business views were created for reporting purposes.
 
 Example:
 
-	- Department Summary
-	- Regional Workforce Summary
-	- Salary Summary
-	
+- Department Summary
+- Regional Workforce Summary
+- Salary Summary
+
 These views simplify reporting and improve dashboard performance.
 
 ---
@@ -191,24 +192,24 @@ These views simplify reporting and improve dashboard performance.
 
 Through this project I learned:
 
-	- Real-world data validation
-	- Data cleaning using Pandas
-	- Vectorized transformations
-	- SQL View creation
-	- Tableau Dashboard development
-	- Git version control
-	- End-to-End Data Engineering workflow
+- Real-world data validation
+- Data cleaning using Pandas
+- Vectorized transformations
+- SQL View creation
+- Tableau Dashboard development
+- Git version control
+- End-to-End Data Engineering workflow
 
 ---
 
 # Future Improvements
 
-	- Logging
-	- Configuration files
-	- Airflow orchestration
-	- Docker containerization
-	- Data Quality Reports
-	- Automated ETL Scheduling
+- Logging
+- Configuration files
+- Airflow orchestration
+- Docker containerization
+- Data Quality Reports
+- Automated ETL Scheduling
 
 ---
 
@@ -217,21 +218,13 @@ Through this project I learned:
 **Dasari Shanmukha Vishnu**
 
 LinkedIn:
-https://www.linkedin.com/in/shanmukha-vishnu-dasari-7860ab334/
+(Add your LinkedIn URL)
 
 GitHub:
-https://github.com/dasarishanmukhavishnu
+(Add your GitHub Profile URL)
 
 ---
 
 # License
 
 This project is created for learning and portfolio purposes.
-
-
-
-
-
-
-
-
