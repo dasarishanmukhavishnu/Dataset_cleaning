@@ -431,3 +431,45 @@ Create reusable SQL Views for business reporting and Tableau dashboards.
 Tableau Dashboard Development
 
 The SQL Views created above will serve as the reporting layer for building an interactive HR Analytics Dashboard containing KPI cards, charts, filters, and business insights.
+
+
+# Day 5 – Tableau Dashboard Development
+
+## Objective
+
+Create an interactive Tableau dashboard using SQL business views to present meaningful insights from the cleaned employee dataset.
+
+## Tasks Completed
+
+* Connected Tableau to the SQL database.
+* Used the `vw_department_summary` SQL view as the primary data source.
+* Created multiple visualizations to analyze department-level information.
+* Designed and arranged charts into a single interactive dashboard.
+* Explored Tableau filters and dashboard interactions.
+* Learned the difference between worksheet filters and dashboard filter actions.
+* Added an additional SQL view as a **new data source** instead of creating a relationship with the existing view.
+* Understood that different SQL views can be used within the same Tableau dashboard without forcing relationships between them.
+* Investigated Tableau's logical data model, including the concepts of **Relationships** and **New Base Table**.
+* Encountered a data source connection error (`Error Code: 81B3934F`) while experimenting with relationships and diagnosed that the issue was related to the data source configuration.
+* Correctly restructured the workbook by keeping the SQL views as separate data sources.
+* Successfully integrated worksheets created from different SQL views into a single dashboard.
+* Saved the Tableau workbook as part of the project repository for version control.
+
+## Challenges Faced
+
+* Confusion between adding a new data source and creating a relationship between tables.
+* Tableau connection error caused by an incorrect data model configuration.
+* Understanding how multiple SQL views can coexist in one workbook.
+* Learning how Tableau stores workbook files (`.twb`) as XML and why GitHub displays XML instead of the visual dashboard.
+
+## Key Learnings
+
+* A Tableau workbook can contain multiple independent data sources.
+* Relationships are only required when two tables need to be analyzed together using a common key.
+* Different SQL views can be used to create different worksheets and combined into one dashboard.
+* Tableau workbooks are stored as XML (`.twb`) files, which is expected behavior when viewed on GitHub.
+* The dashboard itself is viewed using Tableau Desktop, while GitHub is used to version-control the workbook and related project files.
+
+## Outcome
+
+Successfully completed the Tableau dashboard for Project 1 by combining insights from multiple SQL views into a single dashboard. The project now includes data cleaning, SQL business views, Tableau visualization, Git version control, and project documentation, completing the end-to-end workflow.
